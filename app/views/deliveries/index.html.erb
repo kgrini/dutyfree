@@ -1,0 +1,16 @@
+
+
+<h1>All deliverys</h1>
+<div>
+    <ul>
+      <% @deliveries.each do |delivery| %>
+          <%= delivery.description %>
+
+          <%= link_to "Show", delivery %>
+          <%= link_to "Edit", edit_delivery_path(delivery) %>
+          <%= link_to "Destroy", delivery,  method: :delete, :data => { :confirm => "Are you sure?" } %>
+
+      <% end %>
+    </ul>
+    <%= link_to "Create Product", new_delivery_path %>
+</div>

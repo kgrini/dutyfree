@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dutyfree</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="positions">
+    <div class="menu_position">
+    <%= render "shared/column_menu" %>
+    </div>
+    <div class="main_content">
+      <%= render 'layouts/messages' %>
+
+      <%= yield %>
+    </div>
+    <br>
+
+    <%= debug(params) if Rails.env.development?  %>
+</div>
+</body>
+</html>

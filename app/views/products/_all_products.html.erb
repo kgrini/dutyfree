@@ -1,0 +1,14 @@
+<ul>
+  <% @products.each do |product| %>
+      <%= simple_format product.name %>
+      <%#= product.description %>
+      <%#= product.size %>
+      <%#= product.price %>
+      <%#= image_tag product.image(:thumb) %>
+
+      <%#= link_to "Show", product %>
+      <%#= link_to "Edit", edit_product_path(product) %>
+      <%#= link_to "Destroy", product,  method: :delete, :data => { :confirm => "Are you sure?" } %>
+
+  <% end %>
+</ul>

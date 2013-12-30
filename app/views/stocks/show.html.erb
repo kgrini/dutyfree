@@ -1,0 +1,10 @@
+
+<div>
+
+    <%= image_tag @stock.images_url(:thumb) %>
+    <%= @stock.description %>
+
+</div>
+<%= link_to "All Stocks", stocks_path %>
+<%= link_to "Edit", edit_stock_path(@stock) %>
+<%= link_to "Delete", @stock, method: :delete, :confirm => "Are you Sure?" %>

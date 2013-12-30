@@ -1,0 +1,15 @@
+
+<h1>Add product</h1>
+<div class="form-group">
+    <%= form_for [@categories, @product], :html => {:multipart => true} do |f| %>
+
+        <%= render 'shared/error_messages', object: @product %>
+        <%= f.label :name %>
+        <%= f.text_field :name, :class => 'form-control'  %>
+
+
+
+        <%= f.submit 'Submit', :class => "btn btn-primary" %>
+
+    <% end %>
+</div>

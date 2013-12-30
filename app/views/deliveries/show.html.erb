@@ -1,0 +1,7 @@
+
+<div>
+    <%= @delivery.description %>
+</div>
+<%= link_to "All products", deliveries_path %>
+<%= link_to "Edit", edit_delivery_path(@delivery) %>
+<%= link_to "Delete", @delivery, method: :delete, :confirm => "Are you Sure?" %>

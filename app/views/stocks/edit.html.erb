@@ -1,0 +1,18 @@
+<h1>Edit Stock</h1>
+<div class="form-group">
+  <%= form_for @stock, :html => {:multipart => true} do |f| %>
+
+      <%= render 'shared/error_messages', object: @stock %>
+
+
+      <%= f.label :description %>
+      <%= f.text_field :description, :class => 'form-control' %>
+
+      <%= image_tag @stock.images_url(:thumb) %>
+      <%= f.label :images %>
+      <%= f.file_field :images, :class => 'form-control' %>
+
+      <%= f.submit 'Submit', :class => "btn btn-primary" %>
+
+  <% end %>
+</div>
