@@ -5,6 +5,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:dutyfree_production</jdbc-url>
       <user-name>dutyfree</user-name>
+      <user-password>dfdbdfdddfcfdfd8dfdedfd3</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
