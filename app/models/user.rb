@@ -7,7 +7,9 @@ class User < ActiveRecord::Base
 
   validates :name, :presence => true
 
-  validates :email, :presence => true
+  VALID_EMAIL = /\A[\w+\- .]+@[\w+-.]+\.[a-z]+\z/i
+  validates :email, :presence => true, :format => { :with => VALID_EMAIL },
+            :uniqueness => { :case_sensitive => false }
 
   validates :password, :presence => true, :length => { :minimum => 6}
 
