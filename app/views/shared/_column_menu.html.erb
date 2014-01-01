@@ -1,6 +1,14 @@
-<div class = "admin_column_menu">
-  <p><%= link_to "Categories", categories_path %></p>
-  <p><%#= link_to "Products", products_path %></p>
+<nav class = "admin_column_menu">
+
   <p><%= link_to "Stock", stocks_path %></p>
   <p><%= link_to "Delivery", deliveries_path %></p>
-</div>
+  <p><%= link_to "Sign Out", signout_path, :method => "delete" %></p>
+  <h4>Categories</h4>
+    <ul >
+        <% @menu_categories.each do |category| %>
+          <li>
+            <%= link_to category.name, category %>
+          </li>
+        <% end %>
+    </ul>
+</nav>

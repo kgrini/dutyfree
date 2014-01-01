@@ -1,6 +1,8 @@
 <ul>
   <% @products.each do |product| %>
-      <%= simple_format product.name %>
+      <li>
+        <%=  link_to product.name, [@categories, product] %>
+      </li>
       <%#= product.description %>
       <%#= product.size %>
       <%#= product.price %>

@@ -1,5 +1,7 @@
 
-<div>
+<%= render "shared/column_menu" %>
+
+<section class="main_block">
     <ul>
       <% @stocks.each do |stock| %>
           <%= image_tag stock.images_url(:thumb) %>
@@ -11,5 +13,5 @@
 
       <% end %>
     </ul>
-    <%= link_to "Create Product", new_stock_path %>
-</div>
+    <%= link_to "Create Stock", new_stock_path %>
+</section>

@@ -1,17 +1,22 @@
 
-$lightGrey: #000;
+$lightGrey: #F5F5F5;
 
-#admin_column_menu {
-  width: 300px;
+.admin_column_menu {
+  width: 200px;
   height: 100%;
   background-color: $lightGrey;
+  float: left;
+  text-align: center;
 }
 
-.positions {
-  width: 1000px;
-  float: left;
-}
+ul {
+  float: right;
+  list-style: none;
+  li {
+    width: 100px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+  }
 
-.float {
-  float: left;
 }

@@ -4,4 +4,23 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   include SessionsHelper
+  include CategoriesHelper
+
+
+  unless Rails.application.config.consider_all_requests_local
+    rescue_from Exception, :with => :render_error
+    rescue_from ActiveRecord::RecordNotFound, :with => :render_not_found
+    rescue_from ActionController::RoutingError, :with => :render_not_found
+  end
+
+  # called by last route matching unmatched routes.
+  # Raises RoutingError which will be rescued from in the
+  # same way as other exceptions.
+
+  def raise_not_found!
+    #raise ActionController::RoutingError.new("No route matches #{params[:unmatched_route]}")
+    redirect_to stocks_path
+  end
+
+
 end

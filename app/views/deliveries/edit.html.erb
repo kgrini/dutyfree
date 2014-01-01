@@ -1,5 +1,8 @@
+
+<%= render "shared/column_menu" %>
+
+<section class="main_block">
 <h1>Edit delivery</h1>
-<div class="form-group">
   <%= form_for @delivery, :html => {:multipart => true} do |f| %>
 
       <%= render 'shared/error_messages', object: @delivery %>
@@ -21,4 +24,4 @@
       <%= f.submit 'Submit', :class => "btn btn-primary" %>
 
   <% end %>
-</div>
+</section>

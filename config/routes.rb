@@ -8,11 +8,16 @@ Dutyfree::Application.routes.draw do
 
   resources :sessions
 
+  resources :static_pages
+
   resources :categories do
     resources :products
   end
 
   match "/admin/signin" => "sessions#new", :via => [:get, :post]
+  match "signout"  => "sessions#destroy", via: :delete
+
+  match "*unmatched_route" => "application#raise_not_found!", :via => [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

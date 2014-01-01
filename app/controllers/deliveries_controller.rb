@@ -1,6 +1,7 @@
 class DeliveriesController < ApplicationController
 
   before_action :set_delivery, only: [:show, :edit, :update, :destroy]
+  before_action :all_categories, :only => [:new, :index, :edit, :show]
 
   def index
     @deliveries = Delivery.all

@@ -4,10 +4,16 @@
     <%= form_for [@categories, @product], :html => {:multipart => true} do |f| %>
 
         <%= render 'shared/error_messages', object: @product %>
-        <%= f.label :name %>
-        <%= f.text_field :name, :class => 'form-control'  %>
 
+        <%= f.text_field :name, :class => 'form-control', :placeholder => "Name"   %>
 
+        <%= f.text_area :description, :class => 'form-control', :placeholder => "Description"    %>
+
+        <%= f.number_field :size, :class => 'form-control', :placeholder => "Size"    %>
+
+        <%= f.number_field :price, :class => 'form-control', :placeholder => "Price"    %>
+
+        <%= f.file_field :images, :class => 'form-control' %>
 
         <%= f.submit 'Submit', :class => "btn btn-primary" %>
 

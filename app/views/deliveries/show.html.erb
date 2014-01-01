@@ -1,7 +1,9 @@
 
-<div>
+<%= render "shared/column_menu" %>
+
+<section class="main_block">
     <%= @delivery.description %>
-</div>
+</section>
 <%= link_to "All products", deliveries_path %>
 <%= link_to "Edit", edit_delivery_path(@delivery) %>
 <%= link_to "Delete", @delivery, method: :delete, :confirm => "Are you Sure?" %>

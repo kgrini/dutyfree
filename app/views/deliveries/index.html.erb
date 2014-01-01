@@ -1,7 +1,8 @@
 
+<%= render "shared/column_menu" %>
 
-<h1>All deliverys</h1>
-<div>
+<section class="main_block">
+<h1>All deliveries</h1>
     <ul>
       <% @deliveries.each do |delivery| %>
           <%= delivery.description %>
@@ -13,4 +14,4 @@
       <% end %>
     </ul>
     <%= link_to "Create Product", new_delivery_path %>
-</div>
+</section>

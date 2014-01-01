@@ -1,5 +1,7 @@
 
-<div>
+<%= render "shared/column_menu" %>
+
+<section class="main_block">
   <h1>Category name</h1>
     <%= @category.name %> <br /><br />
 
@@ -7,7 +9,7 @@
     <%= render 'products/form' %>
     <%= render 'products/all_products' %>
 
-</div>
+</section>
 <%= link_to "All products", categories_path %>
 <%= link_to "Edit", edit_category_path(@category) %>
 <%= link_to "Delete", @category, method: :delete, :confirm => "Are you Sure?" %>

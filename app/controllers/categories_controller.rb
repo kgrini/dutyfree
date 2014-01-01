@@ -1,9 +1,11 @@
 class CategoriesController < ApplicationController
 
+  before_filter :signed_in_user, :only => [:new, :create, :edit, :update, :destroy, :index]
+  before_filter :admin_user, :only => :destroy
   before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :all_categories, :only => [:new, :index, :edit, :show]
 
   def index
-    @categories = Category.all
   end
 
   def show
@@ -45,7 +47,7 @@ class CategoriesController < ApplicationController
 
   def destroy
     @category.destroy
-    flash[:error] = "Category wass all products was deleted"
+    flash[:error] = "Category was deleted"
     redirect_to categories_path
   end
 
@@ -54,7 +56,19 @@ class CategoriesController < ApplicationController
   end
 private
 
+
   def set_category
-    @category = Category.find(params[:id])
+    begin
+      @category = Category.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Попытка доступа к несуществующей категории #{params[:id]}"
+      redirect_to categories_path, :notice => "Категории не существует"
+    else
+      @category = Category.find(params[:id])
+    end
+  end
+
+  def admin_user
+    redirect_to root_path unless current_user.admin?
   end
 end
