@@ -2,16 +2,20 @@
 <%= render "shared/column_menu" %>
 
 <section class="main_block">
+  <h4>Все акции</h4>
+  <%= link_to "Create Stock", new_stock_path %>
     <ul>
       <% @stocks.each do |stock| %>
-          <%= image_tag stock.images_url(:thumb) %>
-          <%= stock.description %>
-
-          <%= link_to "Show", stock %>
-          <%= link_to "Edit", edit_stock_path(stock) %>
-          <%= link_to "Destroy", stock,  method: :delete, :data => { :confirm => "Are you sure?" } %>
+          <li>
+              <%= image_tag stock.images_url(:thumb) %>
+              <%= stock.description %>
+              <%= link_to "Show", stock %>
+              <%= link_to "Edit", edit_stock_path(stock) %>
+              <%= link_to "Destroy", stock,  method: :delete, :data => { :confirm => "Are you sure?" } %>
+          </li>
 
       <% end %>
     </ul>
-    <%= link_to "Create Stock", new_stock_path %>
+
+  <%= will_paginate %>
 </section>

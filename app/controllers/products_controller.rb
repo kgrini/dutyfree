@@ -1,11 +1,11 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_filter :load_categories
-  before_action :all_categories, :only => [:new, :index, :edit, :show]
+  before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
 
   def index
     @categories = Category.find(params[:category_id])
-    @products = @categories.products
+    @products = @categories.products.paginate(:page => params[:page], :per_page => 2)
   end
 
   def new
@@ -31,7 +31,7 @@ class ProductsController < ApplicationController
 
   def update
     if @product.update_attributes(product_params)
-     redirect_to @product
+     redirect_to [@categories, @product]
     else
      render 'edit'
     end
@@ -40,19 +40,25 @@ class ProductsController < ApplicationController
   def destroy
     @product.destroy
     flash[:success] = "Product was deleted"
-    redirect_to products_path
+    redirect_to @categories
   end
 
   def set_product
-    @product = Product.find(params[:id])
+    begin
+      @product = Product.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Попытка доступа к несуществующему продукту #{params[:id]}"
+      redirect_to categories_path, :notice => "Продукта не существует"
+    else
+
+    end
   end
 
   def product_params
-    params.require(:product).permit(:name, :description, :size, :prices, :images, :categories_id, :categories_type)
+    params.require(:product).permit(:name, :description, :size, :price, :images, :categories_id, :categories_type)
   end
 
 private
-
   def load_categories
     resource, id = request.path.split('/')[1, 2]
     @categories = resource.singularize.classify.constantize.find(id)

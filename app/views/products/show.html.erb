@@ -1,12 +1,27 @@
+<%= render "shared/column_menu" %>
 
-<div>
-    <%= @product.name %>
-    <%= @product.description %>
-    <%= @product.size %>
-    <%= @product.price %>
-    <%= image_tag @product.images_url(:thumb) %>
+<section class="main_block">
+  <h4>Продукт</h4>
+  <%= image_tag @product.images_url(:thumb) %>
+  <ul>
+    <li>
+        <%= @product.name %>
+    </li>
+    <li>
+        <%= @product.description %>
+    </li>
+    <li>
+        <%= @product.size %> gramms
+    </li>
+    <li>
+        <%= @product.price %> mdl
+    </li>
+    <li>
+      <%= link_to "Delete", [@categories,@product], method: :delete, :confirm => "Are you Sure?" %>
+      <%= link_to "Edit", edit_category_product_path %>
+    </li>
+  </ul>
 
-</div>
-<%= link_to "All products", products_path %>
-<%= link_to "Edit", edit_product_path(@product) %>
-<%= link_to "Delete", @product, method: :delete, :confirm => "Are you Sure?" %>
+</section>
+
+

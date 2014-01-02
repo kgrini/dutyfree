@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
   before_filter :signed_in_user, :only => [:new, :create, :edit, :update, :destroy, :index]
   before_filter :admin_user, :only => :destroy
   before_action :set_category, only: [:show, :edit, :update, :destroy]
-  before_action :all_categories, :only => [:new, :index, :edit, :show]
+  before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
 
   def index
   end
@@ -21,12 +21,12 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.new(category_params)
-    @products = @category.products.build
+    #@products = @category.products.build
     if @category.save
-      flash[:success] = "Category created successfuly"
+      flash[:success] = "Категория добавлена"
       redirect_to @category
     else
-      flash[:error] = "Fill all fields"
+      flash[:error] = "Заполните все поля"
       render 'new'
     end
   end
@@ -36,10 +36,10 @@ class CategoriesController < ApplicationController
 
   def update
     if @category.update_attributes(category_params)
-      flash[:success] = "Category was updated"
+      flash[:success] = "Категория отредактированна"
       redirect_to @category
     else
-      flash[:error] = "Fill all fields"
+      flash[:error] = "Заполните все поля"
       render 'edit'
     end
 
@@ -47,7 +47,7 @@ class CategoriesController < ApplicationController
 
   def destroy
     @category.destroy
-    flash[:error] = "Category was deleted"
+    flash[:error] = "Категория удаленна"
     redirect_to categories_path
   end
 
@@ -55,7 +55,6 @@ class CategoriesController < ApplicationController
     params.require(:category).permit(:name)
   end
 private
-
 
   def set_category
     begin

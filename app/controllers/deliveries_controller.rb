@@ -1,10 +1,10 @@
 class DeliveriesController < ApplicationController
 
   before_action :set_delivery, only: [:show, :edit, :update, :destroy]
-  before_action :all_categories, :only => [:new, :index, :edit, :show]
+  before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
 
   def index
-    @deliveries = Delivery.all
+    @deliveries = Delivery.paginate(:page => params[:page], :per_page => 4)
   end
 
   def new
@@ -17,7 +17,6 @@ class DeliveriesController < ApplicationController
       flash[:success] = "Hoorey"
       redirect_to @delivery
     else
-      flash[:error] = "Fill all fields"
       render 'new'
     end
   end

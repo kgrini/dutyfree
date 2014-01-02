@@ -1,14 +1,12 @@
 <%= render "shared/column_menu" %>
 
 <section class="main_block">
-<h1>Edit Stock</h1>
+<h4>Редактировать акцию</h4>
   <%= form_for @stock, :html => {:multipart => true} do |f| %>
 
       <%= render 'shared/error_messages', object: @stock %>
 
-
-      <%= f.label :description %>
-      <%= f.text_field :description, :class => 'form-control' %>
+      <%= f.text_area :description, :class => 'form-control', :placeholder => "Описание" %>
 
       <%= image_tag @stock.images_url(:thumb) %>
       <%= f.label :images %>

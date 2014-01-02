@@ -1,5 +1,6 @@
 
 $lightGrey: #F5F5F5;
+$grey: #545454;
 
 .admin_column_menu {
   width: 200px;
@@ -19,4 +20,8 @@ ul {
     margin-left: 10px;
   }
 
+}
+
+#signout {
+  background-color: $grey;
 }

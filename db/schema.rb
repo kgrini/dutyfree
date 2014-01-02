@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20131229214548) do
     t.datetime "updated_at"
   end
 
+  add_index "categories", ["name"], name: "index_categories_on_name", unique: true, using: :btree
+
   create_table "deliveries", force: true do |t|
     t.text     "description"
     t.datetime "created_at"
@@ -30,6 +32,9 @@ ActiveRecord::Schema.define(version: 20131229214548) do
 
   create_table "products", force: true do |t|
     t.string   "name"
+    t.string   "description"
+    t.integer  "size"
+    t.integer  "price"
     t.integer  "categories_id"
     t.string   "categories_type"
     t.datetime "created_at"
@@ -40,7 +45,7 @@ ActiveRecord::Schema.define(version: 20131229214548) do
   add_index "products", ["categories_id", "categories_type"], name: "index_products_on_categories_id_and_categories_type", using: :btree
 
   create_table "stocks", force: true do |t|
-    t.text     "description"
+    t.string   "description"
     t.string   "images"
     t.datetime "created_at"
     t.datetime "updated_at"

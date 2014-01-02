@@ -2,8 +2,8 @@
 <%= render "shared/column_menu" %>
 
 <section class="main_block">
-    <%= @delivery.description %>
+  <h4>Доставка</h4>
+    <%= @delivery.description %><br>
+  <%= link_to "Редактировать", edit_delivery_path(@delivery) %>
+  <%= link_to "Удалить", @delivery, method: :delete, :confirm => "Are you Sure?" %>
 </section>
-<%= link_to "All products", deliveries_path %>
-<%= link_to "Edit", edit_delivery_path(@delivery) %>
-<%= link_to "Delete", @delivery, method: :delete, :confirm => "Are you Sure?" %>

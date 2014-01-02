@@ -1,12 +1,11 @@
 
-<h1>Add delivery</h1>
+<h1>Добавить дотавку</h1>
 <div class="form-group">
     <%= form_for @delivery, :html => {:multipart => true} do |f| %>
 
         <%= render 'shared/error_messages', object: @delivery %>
 
-        <%= f.label :description %>
-        <%= f.text_field :description, :class => 'form-control' %>
+        <%= f.text_area :description, :class => 'form-control', :placeholder => "Описание" %>
 
         <%= f.submit 'Submit', :class => "btn btn-primary" %>
 

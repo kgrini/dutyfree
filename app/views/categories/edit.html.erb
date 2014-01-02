@@ -2,10 +2,11 @@
 <%= render "shared/column_menu" %>
 
 <section class="main_block">
-<h1>Edit product</h1>
+<h4>Редактировать категорию</h4>
   <%= form_for @category, :html => {:multipart => true} do |f| %>
 
       <%= render 'shared/error_messages', object: @category %>
+
       <%= f.label :name %>
       <%= f.text_field :name, :class => 'form-control'  %>
 

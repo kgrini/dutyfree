@@ -2,16 +2,18 @@
 <%= render "shared/column_menu" %>
 
 <section class="main_block">
-<h1>All deliveries</h1>
+<h4>Все доставки</h4>
     <ul>
       <% @deliveries.each do |delivery| %>
-          <%= delivery.description %>
-
-          <%= link_to "Show", delivery %>
-          <%= link_to "Edit", edit_delivery_path(delivery) %>
-          <%= link_to "Destroy", delivery,  method: :delete, :data => { :confirm => "Are you sure?" } %>
+          <li>
+            <%= delivery.description %>
+            <%= link_to "Показать", delivery %>
+            <%= link_to "Редактировать", edit_delivery_path(delivery) %>
+            <%= link_to "Удалить", delivery,  method: :delete, :data => { :confirm => "Are you sure?" } %>
+          </li>
 
       <% end %>
     </ul>
-    <%= link_to "Create Product", new_delivery_path %>
+    <%= will_paginate %>
+    <%= link_to "Добавить доставку", new_delivery_path %>
 </section>

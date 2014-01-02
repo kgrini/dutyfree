@@ -3,7 +3,11 @@ class StocksController < ApplicationController
   before_filter :signed_in_user, :only => [:new, :create, :edit, :index, :destroy, :update]
   before_filter :admin_user, :only => :destroy
   before_action :set_stock, :only => [:edit, :show, :edit, :destroy]
-  before_action :all_categories, :only => [:new, :index, :edit, :show]
+  before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
+
+  def index
+    @stocks = Stock.paginate(:page => params[:page], :per_page => 4)
+  end
 
   def show
   end
@@ -15,16 +19,14 @@ class StocksController < ApplicationController
   def create
     @stock = Stock.new(stock_params)
     if @stock.save
-      redirect_to 'index'
+      flash[:success] = "Акция добавлена"
+      redirect_to stocks_path
+    else
+      render "new"
     end
   end
 
-  def index
-    @stocks = Stock.all
-  end
-
   def edit
-
   end
 
   def update
