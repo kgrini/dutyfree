@@ -1,3 +1,31 @@
 // Place all the styles related to the Static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+@mixin settings($height, $width, $top, $left) {
+  height: $height;
+  width: $width;
+  margin-top: $top;
+  margin-left: $left;
+}
+
+ul {
+  @include settings(100%, 100%, 0px, -50px);
+
+  position: absolute;
+  font-family: arial, sans-serif;
+  font-size: 10pt;
+  color: #614b3d;
+  float: left;
+
+  li.main_button {
+    width: 107px;
+    height: 59px;
+    background-image: image-url('main_button.png');
+
+    &:hover {
+      background-image: image-url('main_button_red.png')
+    }
+  }
+}

@@ -40,7 +40,13 @@ gem 'twitter-bootstrap-rails'
 
 gem 'will_paginate'
 
-gem 'rspec-rails'
+gem 'capybara'
+
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

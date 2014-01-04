@@ -1,5 +1,7 @@
 Dutyfree::Application.routes.draw do
 
+  root 'static_pages#index'
+
   resources :stocks
 
   resources :deliveries

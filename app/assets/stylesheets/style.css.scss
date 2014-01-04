@@ -1,0 +1,161 @@
+@import "bootstrap";
+
+@mixin settings($height, $width, $top, $left) {
+  height: $height;
+  width: $width;
+  margin-top: $top;
+  margin-left: $left;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-image: image-url('fullBackground.jpg');
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #614b3d;
+  //box-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #fff7eb;
+  &:active {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+
+}
+
+.bkg_images {
+  margin-left: 50px;
+  margin-top: 0px;
+  z-index: 0;
+
+  .bottle {
+    background-image: image-url('big_bottle.png');
+    @include settings(966px, 285px, 100px, 1px);
+    position: absolute;
+  }
+
+  .phone {
+    background-image: image-url('phone.png');
+    @include settings(470px, 284px, 40px, 1252px);
+    position: absolute;
+  }
+
+  .top_light {
+    background-image: image-url('top_light.png');
+    @include settings(757px, 1440px, 0px, 60px);
+  }
+}
+
+.header {
+  @include settings(419px, 1185px, -760px, 270px);
+  z-index: 1;
+  position: absolute;
+
+  .original_design {
+    background-image: image-url('original_design.png');
+    @include settings(84px, 280px, 80px, 0px);
+    float: left;
+  }
+
+  .logo {
+    background-image: image-url('logo.png');
+    @include settings(172px, 261px, 0px, 350px);
+    float: left;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .hours {
+    background-image: image-url('24_hours.png');
+    @include settings(31px, 339px, 113px, 636px);
+    float: left;
+    position: absolute;
+  }
+
+  .navigation {
+    background-image: image-url('nav_background.png');
+    @include settings(59px, 927px, 200px, 30px);
+
+    ul {
+      @include settings(100%, 100%, 0px, -50px);
+      position: absolute;
+      color: #614b3d;
+      float: left;
+
+      li.main_button {
+        width: 107px;
+        height: 59px;
+        background-image: image-url('main_button.png');
+
+        &:hover {
+          background-image: image-url('main_button_red.png')
+        }
+      }
+
+      li.catalog_button {
+        width: 168px;
+        height: 59px;
+        background-image: image-url('catalog_button.png');
+
+        &:hover {
+          background-image: image-url('catalog_button_red.png')
+        }
+      }
+
+      li.delivery_button {
+        width: 152px;
+        height: 59px;
+        background-image: image-url('delivery_button.png');
+
+        &:hover {
+          background-image: image-url('delivery_button_red.png')
+        }
+      }
+
+      li.rules_button {
+        width: 205px;
+        height: 59px;
+        background-image: image-url('rules_button.png');
+
+        &:hover {
+          background-image: image-url('rules_button_red.png')
+        }
+      }
+
+      li.stocks_button {
+        width: 118px;
+        height: 59px;
+        background-image: image-url('stocks_button.png');
+
+        &:hover {
+          background-image: image-url('stocks_button_red.png')
+        }
+      }
+    }
+  }
+
+  .filter_by_price {
+    background-image: image-url('filter_by_price.png');
+    @include settings(16px, 179px, 20px, 28px);
+    position: absolute;
+  }
+
+  .filter_by_litr {
+    background-image: image-url('filter_by_litr.png');
+    @include settings(16px, 273px, 20px, 268px);
+    position: absolute;
+  }
+
+
+}
+
