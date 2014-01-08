@@ -42,6 +42,8 @@ gem 'will_paginate'
 
 gem 'capybara'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 
 group :test do
   gem 'rspec-rails'
