@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+
+  before_filter :authenticate_admin_user!, :only => [:new, :create, :edit, :update, :destroy, :index]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_filter :load_categories
   before_action :all_categories, :only => [:new, :index, :edit, :show, :create]

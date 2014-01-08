@@ -2,6 +2,7 @@ Dutyfree::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
   root 'static_pages#index'
 
   resources :stocks
@@ -10,16 +11,12 @@ Dutyfree::Application.routes.draw do
 
   resources :users
 
-  resources :sessions
-
   resources :static_pages
 
   resources :categories do
     resources :products
   end
 
-  match "/admin/signin" => "sessions#new", :via => [:get, :post]
-  match "signout"  => "sessions#destroy", via: :delete
 
   match "*unmatched_route" => "application#raise_not_found!", :via => [:get, :post]
 

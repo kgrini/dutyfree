@@ -1,5 +1,6 @@
 class DeliveriesController < ApplicationController
 
+  before_filter :authenticate_admin_user!, :only => [:new, :create, :edit, :update, :destroy, :index]
   before_action :set_delivery, only: [:show, :edit, :update, :destroy]
   before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
 

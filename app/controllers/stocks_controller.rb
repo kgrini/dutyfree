@@ -1,7 +1,6 @@
 class StocksController < ApplicationController
 
-  before_filter :signed_in_user, :only => [:new, :create, :edit, :index, :destroy, :update]
-  before_filter :admin_user, :only => :destroy
+  before_filter :authenticate_admin_user!, :only => [:new, :create, :edit, :update, :destroy, :index]
   before_action :set_stock, :only => [:edit, :show, :edit, :destroy]
   before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
 
