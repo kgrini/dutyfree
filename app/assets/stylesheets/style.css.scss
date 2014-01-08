@@ -7,6 +7,11 @@
   margin-left: $left;
 }
 
+@mixin li($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -83,7 +88,6 @@ a {
   }
 
   .navigation {
-    background-image: image-url('nav_background.png');
     @include settings(59px, 927px, 200px, 30px);
 
     ul {
@@ -92,53 +96,51 @@ a {
       color: #614b3d;
       float: left;
 
-      li.main_button {
-        width: 107px;
-        height: 59px;
-        background-image: image-url('main_button.png');
-
-        &:hover {
-          background-image: image-url('main_button_red.png')
-        }
+      li.main_button, a {
+        @include li(107px, 59px);
+        background-image: image-url('main_button_red.png');
+        //&:active {
+        //  background-image: image-url('main_button_red.png')
+        //}
       }
 
       li.catalog_button {
-        width: 168px;
-        height: 59px;
+        @include li(169px, 59px);
         background-image: image-url('catalog_button.png');
-
         &:hover {
           background-image: image-url('catalog_button_red.png')
         }
       }
 
       li.delivery_button {
-        width: 152px;
-        height: 59px;
+        @include li(152px, 59px);
         background-image: image-url('delivery_button.png');
-
         &:hover {
           background-image: image-url('delivery_button_red.png')
         }
       }
 
       li.rules_button {
-        width: 205px;
-        height: 59px;
+        @include li(205px, 59px);
         background-image: image-url('rules_button.png');
-
         &:hover {
           background-image: image-url('rules_button_red.png')
         }
       }
 
       li.stocks_button {
-        width: 118px;
-        height: 59px;
+        @include li(118px, 59px);
         background-image: image-url('stocks_button.png');
-
         &:hover {
           background-image: image-url('stocks_button_red.png')
+        }
+      }
+
+      li.contact_button {
+        @include li(181px, 59px);
+        background-image: image-url('contact_button.png');
+        &:hover {
+          background-image: image-url('contact_button_red.png')
         }
       }
     }

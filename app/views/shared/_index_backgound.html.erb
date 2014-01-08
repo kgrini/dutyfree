@@ -1,4 +1,4 @@
-<div class = "bkg_images"}>
+<div class = "bkg_images">
   <section class = "phone"> </section>
   <section class = "bottle"> </section>
   <section class = "top_light"></section>
@@ -8,15 +8,14 @@
   <section class = "hours"> </section>
   <nav class = "navigation">
     <ul class="button">
-      <a href="<%= root_path %>">
-          <li class="main_button">
-          </li>
-      </a>
+        <li class="main_button", background >
+        </li>
+
       <a href="<%= categories_path %>">
           <li  class="catalog_button">
           </li>
       </a>
-      <a href="">
+      <a href="<%= deliveries_path %>">
           <li  class="delivery_button">
           </li>
       </a>
@@ -24,14 +23,14 @@
         <li  class="rules_button">
         </li>
       </a>
-      <a href="#">
+      <a href="<%= stocks_path %>">
         <li  class="stocks_button">
         </li>
       </a>
-
-      <li>
-         <a href="#"><b>Контакты</b></a>
-      </li>
+      <a href="#">
+        <li  class="contact_button">
+        </li>
+      </a>
     </ul>
   </nav>
   <!--<section class = "filter_by_price"> </section>-->
