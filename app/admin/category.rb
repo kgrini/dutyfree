@@ -5,6 +5,13 @@ ActiveAdmin.register Category do
     #permitted << :product if resource.something?
   end
 
+  sidebar "Category Products", only: [:show, :edit] do
+    ul do
+      li link_to("New product", new_admin_category_product_path(category.id))
+      li link_to("All products", admin_categories_path)
+    end
+  end
+
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -17,5 +24,5 @@ ActiveAdmin.register Category do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  
+
 end
