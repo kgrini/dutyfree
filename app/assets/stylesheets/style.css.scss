@@ -88,7 +88,9 @@ a {
   }
 
   .navigation {
-    @include settings(59px, 927px, 200px, 30px);
+    @include settings(59px, 927px, 200px, 50px);
+
+
 
     ul {
       @include settings(100%, 100%, 0px, -50px);
@@ -96,9 +98,13 @@ a {
       color: #614b3d;
       float: left;
 
+      li{
+        margin-left: .0em;
+      }
       li.main_button, a {
         @include li(107px, 59px);
         background-image: image-url('main_button_red.png');
+        line-width: 0%;
         //&:active {
         //  background-image: image-url('main_button_red.png')
         //}
@@ -107,43 +113,28 @@ a {
       li.catalog_button {
         @include li(169px, 59px);
         background-image: image-url('catalog_button.png');
-        &:hover {
-          background-image: image-url('catalog_button_red.png')
-        }
       }
 
       li.delivery_button {
         @include li(152px, 59px);
         background-image: image-url('delivery_button.png');
-        &:hover {
-          background-image: image-url('delivery_button_red.png')
-        }
       }
 
       li.rules_button {
         @include li(205px, 59px);
         background-image: image-url('rules_button.png');
-        &:hover {
-          background-image: image-url('rules_button_red.png')
-        }
       }
 
       li.stocks_button {
         @include li(118px, 59px);
-        background-image: image-url('stocks_button.png');
-        &:hover {
-          background-image: image-url('stocks_button_red.png')
-        }
+        background-image: image-url('stocks_button.png');}
       }
 
       li.contact_button {
         @include li(181px, 59px);
         background-image: image-url('contact_button.png');
-        &:hover {
-          background-image: image-url('contact_button_red.png')
-        }
       }
-    }
+
   }
 
   .filter_by_price {
@@ -158,6 +149,49 @@ a {
     position: absolute;
   }
 
+  .categories {
+    background-color: #f1e4d3;
+    @include settings(100%, 240px, 40px, 0px);
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:5px;
+    -khtml-border-radius:10px;
 
+
+  }
+
+  .categories_title {
+    @include settings(26px, 103px, 20px, 20px);
+    background-image: image-url('categories.png');
+    position: absolute;
+  }
+
+  ul.categories_list {
+    @include settings(100%, 100%, 80px, 13px);
+    display: block;
+    position:relative;
+    a {
+      color: #614b3d;
+      text-decoration: none;
+      &:hover {
+        color: #3f1515;
+      }
+    }
+
+    li {
+      margin: -10px;
+      font-color: #614b3d;
+      font-size: 15px;
+      font-family: Arial;
+      margin-top: 0px;
+
+    }
+
+    .hr_category {
+      height: 7px;
+      width: 187px;
+      margin-top: 10px;
+      background-image: image-url('hr_caterogy.png');
+    }
+  }
 }
-
