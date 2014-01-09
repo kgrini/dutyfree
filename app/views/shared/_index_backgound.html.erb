@@ -43,12 +43,26 @@
           <a href="<%= category_path(category.id) %>">
             <b><%= category.name %></b>
           </a>
-
         </li>
         <li>
           <section class = "hr_category"></section>
         </li>
        <% end %>
+    </ul>
+  </section>
+  <section class="products">
+  </section>
+  <section class = "last_added_products_title">
+  </section>
+  <section>
+    <ul>
+        <% @products.each do |product| %>
+          <li class="product_form">
+              <a href="">
+                 <span id="product_name_at_bottom"><%= product.name %><span>
+              </a>
+          </li>
+        <% end %>
     </ul>
   </section>
   <!--<section class = "filter_by_price"> </section>-->

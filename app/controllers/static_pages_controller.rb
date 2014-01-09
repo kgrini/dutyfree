@@ -4,5 +4,6 @@ class StaticPagesController < ApplicationController
 
   def index
     @categories = Category.all
+    @products = Product.order(:created_at)
   end
 end
