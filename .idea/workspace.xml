@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0eb957e-af24-46c5-b443-00a1a8ae9e55" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_bg_images.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_categories.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" />
-      <change type="DELETED" beforePath="E:\Work\app\dutyfree\app\assets\stylesheets\style.css.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_index_backgound.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_index_backgound.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_categories.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_categories.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dutyfree.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,9 +76,9 @@
     <file path="/admins_helper.rb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389190840557" ignored="false" />
     <file path="/admins_controller.rb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389191197792" ignored="false" />
     <file path="/static_pages_controller.rb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389305375497" ignored="false" />
-    <file path="/static_pages.css.scss" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389352377723" ignored="false" />
-    <file path="/_categories.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389351264123" ignored="false" />
-    <file path="/_products_block.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389352235156" ignored="false" />
+    <file path="/static_pages.css.scss" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389360002951" ignored="false" />
+    <file path="/_categories.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389354463755" ignored="false" />
+    <file path="/_products_block.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389359905039" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,31 +101,30 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="21" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.65384614">
+            <state line="6" column="30" selection-start="169" selection-end="169" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_categories.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_categories.html.erb">
+      <file leaf-file-name="_products_block.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_products_block.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="1" selection-start="46" selection-end="379" vertical-scroll-proportion="0.039170507">
+            <state line="9" column="35" selection-start="300" selection-end="300" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static_pages.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="static_pages.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="236" column="12" selection-start="4811" selection-end="4811" vertical-scroll-proportion="0.0">
+            <state line="234" column="27" selection-start="4820" selection-end="4820" vertical-scroll-proportion="0.7035794">
               <folding>
                 <element signature="e#371#480#0" expanded="false" />
                 <element signature="e#555#665#0" expanded="false" />
                 <element signature="e#685#719#0" expanded="false" />
                 <element signature="e#944#1398#0" expanded="false" />
-                <element signature="e#1408#3394#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -165,11 +160,11 @@
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/categories.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_index_backgound.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_categories.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/shared/_categories.html.erb" />
       </list>
     </option>
   </component>
@@ -922,37 +917,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_categories.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="12" selection-start="4811" selection-end="4811" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#371#480#0" expanded="false" />
-            <element signature="e#555#665#0" expanded="false" />
-            <element signature="e#685#719#0" expanded="false" />
-            <element signature="e#944#1398#0" expanded="false" />
-            <element signature="e#1408#3394#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_products_block.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="300" selection-end="300" vertical-scroll-proportion="0.27419356">
+        <state line="9" column="17" selection-start="280" selection-end="280" vertical-scroll-proportion="0.17626728">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.65384614">
+        <state line="6" column="30" selection-start="169" selection-end="169" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_categories.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_products_block.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="46" selection-end="379" vertical-scroll-proportion="0.039170507">
+        <state line="9" column="35" selection-start="300" selection-end="300" vertical-scroll-proportion="-5.8846154">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="27" selection-start="4820" selection-end="4820" vertical-scroll-proportion="0.7035794">
+          <folding>
+            <element signature="e#371#480#0" expanded="false" />
+            <element signature="e#555#665#0" expanded="false" />
+            <element signature="e#685#719#0" expanded="false" />
+            <element signature="e#944#1398#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,14 +1,17 @@
 <section class="categories_title">
+ </section>
+<section>
+    <ul class="categories_list">
+      <% @categories.each do |category| %>
+          <li >
+            <a href="<%= category_path(category.id) %>">
+              <b><%= category.name %></b>
+            </a>
+          </li>
+          <li>
+            <section class = "hr_category">
+            </section>
+          </li>
+      <% end %>
+    </ul>
 </section>
-<ul class="categories_list">
-  <% @categories.each do |category| %>
-      <li >
-        <a href="<%= category_path(category.id) %>">
-          <b><%= category.name %></b>
-        </a>
-      </li>
-      <li>
-        <section class = "hr_category"></section>
-      </li>
-  <% end %>
-</ul>

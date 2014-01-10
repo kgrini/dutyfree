@@ -1,0 +1,15 @@
+<section class="products_background">
+</section>
+<section class = "last_added_products_title">
+</section>
+<section>
+    <ul id="products_list">
+      <% @products.each do |product| %>
+          <li class="product_form" >
+            <a href="" id = "product_link">
+                <%= product.name %>
+            </a>
+          </li>
+      <% end %>
+    </ul>
+</section>
