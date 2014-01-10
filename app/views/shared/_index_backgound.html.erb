@@ -1,70 +1,7 @@
-<div class = "bkg_images">
-  <section class = "phone"> </section>
-  <section class = "bottle"> </section>
-  <section class = "top_light"></section>
-<header class = "header">
-  <section class = "original_design"></section>
-  <section class = "logo"> </section>
-  <section class = "hours"> </section>
-  <nav class = "navigation">
-    <ul class="button">
-      <a href="<%= root_path %>">
-        <li class="main_button" >
-        </li>
-      </a>
-      <a href="<%= categories_path %>">
-          <li  class="catalog_button">
-          </li>
-      </a>
-      <a href="<%= deliveries_path %>">
-          <li  class="delivery_button">
-          </li>
-      </a>
-      <a href="#">
-        <li  class="rules_button">
-        </li>
-      </a>
-      <a href="<%= stocks_path %>">
-        <li  class="stocks_button">
-        </li>
-      </a>
-      <a href="#">
-        <li  class="contact_button">
-        </li>
-      </a>
-    </ul>
-  </nav>
-  <section class = "categories">
-    <section class="categories_title">
-    </section>
-    <ul class="categories_list">
-       <% @categories.each do |category| %>
-        <li >
-          <a href="<%= category_path(category.id) %>">
-            <b><%= category.name %></b>
-          </a>
-        </li>
-        <li>
-          <section class = "hr_category"></section>
-        </li>
-       <% end %>
-    </ul>
-  </section>
-  <section class="products_block">
-    <section class="products_background">
-    </section>
-    <section class = "last_added_products_title">
-    </section>
-    <ul id="products_list">
-      <% @products.each do |product| %>
-          <li class="product_form">
-            <a href="">
-                 <span id="product_name_at_bottom"><%= product.name %><span>
-            </a>
-          </li>
-      <% end %>
-    </ul>
-  </section>
+
+
+
+
 
 
 
