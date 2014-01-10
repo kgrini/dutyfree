@@ -233,31 +233,50 @@ a {
     @include settings(16px, 740px, 80px, 0px);
 
     li.product_form {
-      @include settings(172px, 172px, 0px, 0px);
+      @include settings(160px, 162px, 0px, 0px);
       @include corners;
       background-color: #937966;
       vertical-align: bottom;
       position: absolute;
     }
 
-    .products_list_last_added {
+
+    .img {
       position: absolute;
-      @include settings(100%, 100, 0px, 0px);
-      color: #937966;
       @include corners;
+      z-index: 10;
+      margin-top: 5px;
+      margin-left: 6px;
+      background-color: #000;
     }
 
-    a#product_link {
+    .product_name_background {
+      position: absolute;
+      margin-top: 115px;
+      margin-left: 6px;
+      height: 40px;
+      width: 150px;
+      background-color: #000;
+      opacity: 0.4;
+      z-index: 11;
+    }
+  }
+
+    .product_link {
       position: absolute;
       margin-top: 120px;
-      font-size: 20px;
+      margin-left: 15px;
+      z-index: 12;
+      font-size: 18px;
       font-family: Arial;
       color: #fff;
       text-decoration: none;
       &:hover {
         text-decoration: none;
       }
-    }
+
+
+
   }
 
 

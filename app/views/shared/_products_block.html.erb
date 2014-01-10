@@ -4,12 +4,6 @@
 </section>
 <section>
     <ul id="products_list">
-      <% @products.each do |product| %>
-          <li class="product_form" >
-            <a href="" id = "product_link">
-                <%= product.name %>
-            </a>
-          </li>
-      <% end %>
+        <%= render "shared/product_preview" %>
     </ul>
 </section>

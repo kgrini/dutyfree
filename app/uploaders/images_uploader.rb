@@ -11,7 +11,7 @@ class ImagesUploader < CarrierWave::Uploader::Base
   # storage :fog
 
   version :thumb do
-    process :resize_to_fill => [170,170]
+    process :resize_to_fill => [150 , 150]
   end
 
   def extension_white_list
