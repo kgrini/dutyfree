@@ -50,21 +50,25 @@
        <% end %>
     </ul>
   </section>
-  <section class="products">
-  </section>
-  <section class = "last_added_products_title">
-  </section>
-  <section>
-    <ul>
-        <% @products.each do |product| %>
+  <section class="products_block">
+    <section class="products_background">
+    </section>
+    <section class = "last_added_products_title">
+    </section>
+    <ul id="products_list">
+      <% @products.each do |product| %>
           <li class="product_form">
-              <a href="">
+            <a href="">
                  <span id="product_name_at_bottom"><%= product.name %><span>
-              </a>
+            </a>
           </li>
-        <% end %>
+      <% end %>
     </ul>
   </section>
+
+
+
+
   <!--<section class = "filter_by_price"> </section>-->
   <!--<section class = "filter_bylitr"> </section>-->
   <!--<form name = "form_for_price" >-->

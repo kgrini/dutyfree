@@ -169,7 +169,7 @@ a {
   }
 
   .categories_title {
-    @include settings(26px, 103px, 20px, 20px);
+    @include settings(26px, 103px, 15px, 20px);
     background-image: image-url('categories.png');
     position: absolute;
   }
@@ -203,42 +203,62 @@ a {
     }
   }
 
-  .products {
+
+  .products_block {
     position: absolute;
-    background-color: #fff;
-    @include settings(100%, 740px, -420px, 270px);
-    @include corners;
-    opacity: 0.4;
+    @include settings(100%, 100%, -420px, 270px);
 
+    .products_background {
+      position: absolute;
+      background-color: #fff;
+      @include settings(100%, 740px, 0px, 0px);
+      @include corners;
+      opacity: 0.4;
+
+    }
+
+    .last_added_products_title {
+      @include settings(16px, 273px, 23px, 20px);
+      background-image: image-url('last_added_products.png');
+      position: absolute;
+    }
+
+    ul#products_list {
+      @include settings(16px, 740px, 60px, 0px);
+      li.product_form {
+        @include settings(172px, 172px, 0px, 0px);
+        @include corners;
+        background-color: #937966;
+        position: absolute;
+        z-index: 20;
+      }
+
+      #product_name_at_bottom {
+        margin-top: 40px;
+        margin-left: 5px;
+        font-color: #fff;
+      }
+    }
+
+
+
+
+    .products_list_last_added {
+      position: absolute;
+      @include settings(100%, 100, 0px, 0px);
+      color: #937966;
+      @include corners;
+    }
   }
 
-  .last_added_products_title {
-    @include settings(16px, 273px, -393px, 300px);
-    background-image: image-url('last_added_products.png');
-    position: absolute;
-  }
-
-  .product_form {
-    @include settings(172px, 172px, -360px, 300px);
-    @include corners;
-    background-color: #937966;
-    position: absolute;
-    z-index: 20;
-  }
 
 
-  .products_list_last_added {
-    position: absolute;
-    @include settings(100%, 100, -380px, 300px);
-    color: #937966;
-    @include corners;
-  }
 
-  #product_name_at_bottom {
-    margin-top: -350px;
-    margin-left: 320px;
-    font-color: #fff;
-  }
+
+
+
+
+
   //
   //.product_form {
   //  @include settings(172px, 172px, -350px, 300px);
