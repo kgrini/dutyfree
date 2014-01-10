@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0eb957e-af24-46c5-b443-00a1a8ae9e55" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_product_preview.html.erb" />
+      <change type="DELETED" beforePath="E:\Work\app\dutyfree\public\uploads\product\images\5\e36b0f01911c66dbbed4851af14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\app\dutyfree\public\uploads\product\images\5\thumb_e36b0f01911c66dbbed4851af14.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_product_preview.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_product_preview.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/images_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/images_uploader.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -75,10 +76,10 @@
     <file path="/admins_helper.rb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389190840557" ignored="false" />
     <file path="/admins_controller.rb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389191197792" ignored="false" />
     <file path="/static_pages_controller.rb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389305375497" ignored="false" />
-    <file path="/static_pages.css.scss" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389366460727" ignored="false" />
+    <file path="/static_pages.css.scss" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389367765071" ignored="false" />
     <file path="/_categories.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389354463755" ignored="false" />
     <file path="/_products_block.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389366304289" ignored="false" />
-    <file path="/_product_preview.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389366450881" ignored="false" />
+    <file path="/_product_preview.html.erb" changelist="a0eb957e-af24-46c5-b443-00a1a8ae9e55" time="1389366704262" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,16 @@
       <file leaf-file-name="_product_preview.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_product_preview.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="61" selection-start="194" selection-end="194" vertical-scroll-proportion="-2.6153846">
+            <state line="1" column="4" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_products_block.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_products_block.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="43" selection-start="159" selection-end="159" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
@@ -110,12 +120,18 @@
       <file leaf-file-name="static_pages.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="16" selection-start="5397" selection-end="5397" vertical-scroll-proportion="0.53243846">
+            <state line="253" column="23" selection-start="5210" selection-end="5210" vertical-scroll-proportion="0.4675615">
               <folding>
                 <element signature="e#371#480#0" expanded="false" />
                 <element signature="e#555#665#0" expanded="false" />
                 <element signature="e#685#719#0" expanded="false" />
+                <element signature="e#723#930#0" expanded="false" />
                 <element signature="e#944#1398#0" expanded="false" />
+                <element signature="e#1408#3392#0" expanded="false" />
+                <element signature="e#3103#3236#0" expanded="false" />
+                <element signature="e#3256#3389#0" expanded="false" />
+                <element signature="e#3406#4276#0" expanded="false" />
+                <element signature="e#4567#4704#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -153,8 +169,8 @@
         <option value="$PROJECT_DIR$/app/views/static_pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/uploaders/images_uploader.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/product_preview.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_product_preview.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_products_block.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" />
       </list>
     </option>
@@ -933,13 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_products_block.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="186" selection-end="186" vertical-scroll-proportion="0.11751152">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="30" selection-start="68" selection-end="68" vertical-scroll-proportion="0.039170507">
@@ -949,19 +958,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_product_preview.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="61" selection-start="194" selection-end="194" vertical-scroll-proportion="-2.6153846">
+        <state line="1" column="4" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_products_block.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="43" selection-start="159" selection-end="159" vertical-scroll-proportion="-3.2692308">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="16" selection-start="5397" selection-end="5397" vertical-scroll-proportion="0.53243846">
+        <state line="253" column="23" selection-start="5210" selection-end="5210" vertical-scroll-proportion="0.4675615">
           <folding>
             <element signature="e#371#480#0" expanded="false" />
             <element signature="e#555#665#0" expanded="false" />
             <element signature="e#685#719#0" expanded="false" />
+            <element signature="e#723#930#0" expanded="false" />
             <element signature="e#944#1398#0" expanded="false" />
+            <element signature="e#1408#3392#0" expanded="false" />
+            <element signature="e#3103#3236#0" expanded="false" />
+            <element signature="e#3256#3389#0" expanded="false" />
+            <element signature="e#3406#4276#0" expanded="false" />
+            <element signature="e#4567#4704#0" expanded="false" />
           </folding>
         </state>
       </provider>
