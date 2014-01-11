@@ -2,7 +2,7 @@
  </section>
 <section>
     <ul class="categories_list">
-      <% @categories.each do |category| %>
+      <% @menu_categories.each do |category| %>
           <li >
             <a href="<%= category_path(category.id) %>">
               <b><%= category.name %></b>

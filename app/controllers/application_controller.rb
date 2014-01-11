@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   include CategoriesHelper
-
+  include ProductsHelper
 
   unless Rails.application.config.consider_all_requests_local
     rescue_from Exception, :with => :render_error

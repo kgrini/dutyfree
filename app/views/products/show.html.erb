@@ -1,7 +1,14 @@
-<%= render "shared/column_menu" %>
+<div class = "bkg_images">
+  <%= render "shared/bg_images" %>
+</div>
+<header class = "header">
+  <%= render "shared/header" %>
+</header>
+<section class = "categories">
+  <%= render "shared/categories" %>
+</section>
+<section class="products_block">
 
-<section class="main_block">
-  <h4>Продукт</h4>
   <%= image_tag @product.images_url(:thumb) %>
   <ul>
     <li>
@@ -17,11 +24,8 @@
         <%= @product.price %> mdl
     </li>
     <li>
-      <%= link_to "Delete", [@categories,@product], method: :delete, :confirm => "Are you Sure?" %>
-      <%= link_to "Edit", edit_category_product_path %>
+      <%= link_to "Добавить в корзину", "#" %>
     </li>
   </ul>
 
 </section>
-
-

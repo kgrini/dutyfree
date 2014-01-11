@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="3438501472">
-    <data-source source="LOCAL" name="Rails dutyfree: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="6f5f9e88-082c-4b07-b0ff-e298556ca097">
+    <data-source source="LOCAL" name="Rails dutyfree: production" uuid="6f5f9e88-082c-4b07-b0ff-e298556ca097">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:dutyfree_production</jdbc-url>
       <user-name>dutyfree</user-name>
@@ -15,7 +16,8 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails dutyfree: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="848c45eb-6677-4ceb-b0fb-1cd7594e3b70">
+    <data-source source="LOCAL" name="Rails dutyfree: test" uuid="848c45eb-6677-4ceb-b0fb-1cd7594e3b70">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:dutyfree_test</jdbc-url>
       <user-name>dutyfree</user-name>
@@ -29,8 +31,8 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails dutyfree: development" product="PostgreSQL" version="9.3.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC4 (build 1002)" uuid="838e9fa0-94fa-493b-a152-c1fd35e868e0">
-      <identifier-quote-string>&quot;</identifier-quote-string>
+    <data-source source="LOCAL" name="Rails dutyfree: development" uuid="838e9fa0-94fa-493b-a152-c1fd35e868e0">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:dutyfree_development</jdbc-url>
       <user-name>dutyfree</user-name>
@@ -44,8 +46,8 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails dutyfree: development" product="PostgreSQL" version="9.3.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC4 (build 1002)" uuid="9cfe8682-16cf-459c-b520-0db760ef3bde">
-      <identifier-quote-string>&quot;</identifier-quote-string>
+    <data-source source="LOCAL" name="Rails dutyfree: development" uuid="9cfe8682-16cf-459c-b520-0db760ef3bde">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:dutyfree_development</jdbc-url>
       <user-name>dutyfree</user-name>

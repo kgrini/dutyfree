@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_filter :load_categories
   before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
+  before_action :show_products, :only => [:index, :show]
 
   def index
     @categories = Category.find(params[:category_id])

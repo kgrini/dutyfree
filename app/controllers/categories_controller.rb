@@ -1,8 +1,9 @@
 class CategoriesController < ApplicationController
-
   before_filter :authenticate_admin_user!, :only => [:new, :create, :edit, :update, :destroy, :index]
   before_action :set_category, :only => [:show, :edit, :update, :destroy]
   before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
+  before_action :show_products, :only => [:index]
+
 
   def index
   end
@@ -20,7 +21,6 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.new(category_params)
-    #@products = @category.products.build
     if @category.save
       flash[:success] = "Категория добавлена"
       redirect_to @category

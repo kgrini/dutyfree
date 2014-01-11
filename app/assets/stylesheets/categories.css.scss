@@ -2,8 +2,71 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.main_block {
-  width: 300px;
-  margin-left: 300px;
-  text-align: left;
+@mixin settings($height, $width, $top, $left) {
+  height: $height;
+  width: $width;
+  margin-top: $top;
+  margin-left: $left;
+}
+
+@mixin corners {
+  border-radius:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:5px;
+  -khtml-border-radius:10px;
+
+}
+
+@mixin li($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+
+.navigation {
+  @include settings(59px, 927px, 200px, 50px);
+
+
+
+  ul {
+    @include settings(100%, 100%, 0px, -50px);
+    position: absolute;
+    color: #614b3d;
+    float: left;
+
+    li{
+      margin-left: .0em;
+    }
+
+    li.main_button, a {
+      @include li(107px, 59px);
+      background-image: image-url('main_button.png');
+      line-width: 0%;
+    }
+
+    li.catalog_button {
+      @include li(169px, 59px);
+      background-image: image-url('catalog_button.png');
+    }
+
+    li.delivery_button {
+      @include li(152px, 59px);
+      background-image: image-url('delivery_button.png');
+    }
+
+    li.rules_button {
+      @include li(205px, 59px);
+      background-image: image-url('rules_button.png');
+    }
+
+    li.stocks_button {
+      @include li(118px, 59px);
+      background-image: image-url('stocks_button.png');}
+  }
+
+  li.contact_button {
+    @include li(181px, 59px);
+    background-image: image-url('contact_button.png');
+  }
+
 }

@@ -1,9 +1,9 @@
 class StaticPagesController < ApplicationController
 
   before_filter :current_admin_user, :only => [:new, :create, :edit, :destroy, :update]
+  before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
+  before_action :show_products, :only => [:index]
 
   def index
-    @categories = Category.all
-    @products = Product.order(:created_at)
   end
 end

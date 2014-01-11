@@ -3,10 +3,12 @@
         <li class="product_form" >
           <section  class = "product_name_background">
           </section>
-          <a href="" class = "product_link">
-            <%= product.name%>
+          <a href="<%= category_product_path(product.categories_id, product.id) %>" class = "product_link">
+            <%= product.name %>
           </a>
           <%= image_tag product.images_url(:thumb), :class => "img" %>
         </li>
+
     <% end %>
+  <%#= will_paginate @products_from_main_block%>
 </ul>
