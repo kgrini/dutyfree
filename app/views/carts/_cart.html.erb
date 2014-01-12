@@ -1,0 +1,22 @@
+
+<div class = "bkg_images">
+  <%= render "shared/bg_images" %>
+</div>
+<header class = "header">
+  <%= render "shared/header" %>
+</header>
+<section class = "categories">
+  <%= render "shared/categories" %>
+</section>
+<section class="products_block">
+    <table>
+      <%= render(cart.line_items) %>
+      <tr class="total_line" >
+        <td colspan="2" >Total</td>
+        <td class="total_cell" ><%= cart.total_price %></td>
+      </tr>
+    </table>
+    <%= button_to 'Заказать доставку' , '#' %>
+    <%= button_to 'Очистить корзину?' , cart, :method => :delete,
+                  :confirm => 'Are you sure?' %>
+</section>

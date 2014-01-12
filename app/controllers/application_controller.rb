@@ -6,21 +6,37 @@ class ApplicationController < ActionController::Base
   include CategoriesHelper
   include ProductsHelper
 
-  unless Rails.application.config.consider_all_requests_local
-    rescue_from Exception, :with => :render_error
-    rescue_from ActiveRecord::RecordNotFound, :with => :render_not_found
-    rescue_from ActionController::RoutingError, :with => :render_not_found
+  #unless Rails.application.config.consider_all_requests_local
+  #  rescue_from Exception, :with => :render_error
+  #  rescue_from ActiveRecord::RecordNotFound, :with => :render_not_found
+  #  rescue_from ActionController::RoutingError, :with => :render_not_found
+  #end
+  #
+  ## called by last route matching unmatched routes.
+  ## Raises RoutingError which will be rescued from in the
+  ## same way as other exceptions.
+  #
+  #def raise_not_found!
+  #  #raise ActionController::RoutingError.new("No route matches #{params[:unmatched_route]}")
+  #  redirect_to stocks_path
+  #end
+
+private
+
+  def current_cart
+      if session[:cart_id]
+        @current_cart ||= Cart.find(session[:cart_id])
+      end
+      if session[:cart_id].nil?
+        @current_cart = Cart.create!
+        session[:cart_id] = @current_cart.id
+      end
+      @current_cart
+    Cart.find(session[:cart_id])
+  rescue ActiveRecord::RecordNotFound
+    cart = Cart.create
+    session[:cart_id] = cart_id
+    cart
   end
-
-  # called by last route matching unmatched routes.
-  # Raises RoutingError which will be rescued from in the
-  # same way as other exceptions.
-
-  def raise_not_found!
-    #raise ActionController::RoutingError.new("No route matches #{params[:unmatched_route]}")
-    redirect_to stocks_path
-  end
-
-
 
 end

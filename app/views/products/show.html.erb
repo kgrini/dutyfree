@@ -24,7 +24,7 @@
         <%= @product.price %> mdl
     </li>
     <li>
-      <%= link_to "Добавить в корзину", "#" %>
+      <%= button_to "Добавить в корзину", line_items_path(:product_id => @product), :remote => true %>
     </li>
   </ul>
 

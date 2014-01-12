@@ -1,0 +1,5 @@
+<ul>
+  <%= @cart.line_item.each do |item| %>
+    <li><%= item.product.title %></li>
+  <%= end %>
+</ul>

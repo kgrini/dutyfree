@@ -1,5 +1,5 @@
 <ul id="products_list">
-    <% @products.each do |product| %>
+    <% view_products.each do |product| %>
         <li class="product_form" >
           <section  class = "product_name_background">
           </section>
@@ -10,5 +10,5 @@
         </li>
 
     <% end %>
-  <%#= will_paginate @products_from_main_block%>
+  <%= will_paginate view_products %>
 </ul>

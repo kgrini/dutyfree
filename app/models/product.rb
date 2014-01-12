@@ -2,6 +2,10 @@ class Product < ActiveRecord::Base
 
   belongs_to :categories, polymorphic: true
 
+  has_many :line_items
+
+  before_destroy :ensure_not_referenced_by_any_line_item
+
   validates :name, :presence => true
 
   validates :description, :presence => true
@@ -12,5 +16,15 @@ class Product < ActiveRecord::Base
 
 
   mount_uploader :images, ImagesUploader, :allow_blank => true
+
+
+  def ensure_not_referenced_by_any_line_item
+    if line_items.count.zero?
+      return true
+    else
+      errors.add(:base, "Line items present")
+      return false
+    end
+  end
 
 end

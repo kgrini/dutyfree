@@ -5,5 +5,6 @@ class StaticPagesController < ApplicationController
   before_action :show_products, :only => [:index]
 
   def index
+    @cart = current_cart
   end
 end

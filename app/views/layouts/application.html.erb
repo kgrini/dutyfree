@@ -11,10 +11,12 @@
 
     <div class="main_content">
       <%= render 'layouts/messages' %>
+      <div id = "cart">
+      </div>
       <%= yield %>
     </div>
     <br>
-    <%#= debug(params) if Rails.env.development?  %>
+    <%= debug(params) if Rails.env.development?  %>
 </div>
 </body>
 </html>

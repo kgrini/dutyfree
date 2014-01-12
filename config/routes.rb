@@ -1,5 +1,9 @@
 Dutyfree::Application.routes.draw do
 
+  resources :line_items
+
+  resources :carts
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
@@ -18,7 +22,7 @@ Dutyfree::Application.routes.draw do
   end
 
 
-  match "*unmatched_route" => "application#raise_not_found!", :via => [:get, :post]
+  #match "*unmatched_route" => "application#raise_not_found!", :via => [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
