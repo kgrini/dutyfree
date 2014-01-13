@@ -13,7 +13,7 @@
     <section class = "order_background">
         <%= render "carts/cart", :cart => @cart %>
       <br/>
-        <%= render "form"%>
+        <%= render "form", :line_items => @cart%>
     </section>
 
 </section>

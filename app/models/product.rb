@@ -3,6 +3,7 @@ class Product < ActiveRecord::Base
   belongs_to :categories, polymorphic: true
 
   has_many :line_items
+  has_many :orders
 
   before_destroy :ensure_not_referenced_by_any_line_item
 
