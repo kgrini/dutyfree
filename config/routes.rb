@@ -4,6 +4,8 @@ Dutyfree::Application.routes.draw do
 
   resources :carts
 
+  resources :orders
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 

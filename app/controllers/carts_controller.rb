@@ -4,7 +4,6 @@ class CartsController < InheritedResources::Base
 
   def show
     @cart = Cart.find(params[:id])
-    @order = Order.new
   end
   def destroy
     @cart = current_cart

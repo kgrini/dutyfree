@@ -6,13 +6,14 @@ class CategoriesController < ApplicationController
 
 
   def index
+    @cart = current_cart
   end
 
   def show
     @cart = current_cart
     @category = Category.find(params[:id])
     @categories = @category
-    @products = @categories.products
+    @products = @categories.products.paginate(:page => params[:page], :per_page => 12)
     @product = Product.new
   end
 

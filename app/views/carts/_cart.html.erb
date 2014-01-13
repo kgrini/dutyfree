@@ -1,14 +1,4 @@
 
-<div class = "bkg_images">
-  <%= render "shared/bg_images" %>
-</div>
-<header class = "header">
-  <%= render "shared/header" %>
-</header>
-<section class = "categories">
-  <%= render "shared/categories" %>
-</section>
-<section class="products_block">
     <table>
       <%= render(cart.line_items) %>
       <tr class="total_line" >
@@ -16,7 +6,8 @@
         <td class="total_cell" ><%= cart.total_price %></td>
       </tr>
     </table>
-    <%= button_to 'Заказать доставку' , '#' %>
-    <%= button_to 'Очистить корзину?' , cart, :method => :delete,
+
+    <%= button_to 'Очистить товары?' , cart, :method => :delete,
                   :confirm => 'Are you sure?' %>
-</section>
+    <%= button_to 'Открыть форму заказа' %>
+
