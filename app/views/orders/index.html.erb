@@ -8,6 +8,11 @@
   <%= render "shared/categories" %>
 </section>
 <section class="products_block">
-  <%= render "carts/cart", :cart => @cart%>
-  <%= render "form"%>
+  <section class="products_background">
+    <section class = "order_background">
+        <%= render "carts/cart", :cart => @cart %>
+      <br/>
+        <%= render "form"%>
+    </section>
+  </section>
 </section>

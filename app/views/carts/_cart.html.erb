@@ -1,13 +1,32 @@
 
-    <table>
-      <%= render(cart.line_items) %>
-      <tr class="total_line" >
-        <td colspan="2" >Total</td>
-        <td class="total_cell" ><%= cart.total_price %></td>
-      </tr>
-    </table>
 
-    <%= button_to 'Очистить товары?' , cart, :method => :delete,
-                  :confirm => 'Are you sure?' %>
-    <%= button_to 'Открыть форму заказа' %>
+<ul>
+  <%= render(cart.line_items) %>
+    <li  >Total</li>
+    <li ><%= cart.total_price %></li>
+    <li><%= button_to 'Открыть форму заказа' %></li>
+    <li><%= link_to 'Очистить товары?' , cart, :method => :delete,
+                    :confirm => 'Are you sure?' %></li>
+
+</ul>
+<br />
+
+<br />
+
+    <!--<table>-->
+      <!--<%#= render(cart.line_items) %>-->
+      <!--<tr class="total_line">-->
+        <!--<td  >Total</td>-->
+        <!--<td ><%#= cart.total_price %></td>-->
+      <!--</tr>-->
+      <!--<tr>-->
+        <!--<td><%#= button_to 'Открыть форму заказа' %></td>-->
+        //<td><%#= link_to 'Очистить товары?' , cart, :method => :delete,
+                          :confirm => 'Are you sure?' %></td>
+      <!--</tr>-->
+    <!--</table>-->
+    <!--<br />-->
+
+    <!--<br />-->
+
 

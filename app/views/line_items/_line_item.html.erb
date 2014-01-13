@@ -1,8 +1,4 @@
-<% if line_item == @current_item %>
-    <tr id = "current_item">
-<% else %>
-    <tr>
-<% end %>
-      <td><%= line_item.quantity %>&times;</td>
-      <td><%= line_item.product.name %></td>
-    </tr>
+
+      <li><%= line_item.product.name  %></li>
+      <li>&times;<%= line_item.quantity %></li>
+

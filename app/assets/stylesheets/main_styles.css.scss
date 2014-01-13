@@ -227,3 +227,9 @@ a {
 
   }
 }
+
+.order_background {
+
+  @include settings(100px, 740px, 40px, 80px);
+  position: absolute;
+}

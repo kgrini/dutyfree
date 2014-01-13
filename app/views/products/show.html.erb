@@ -8,24 +8,25 @@
   <%= render "shared/categories" %>
 </section>
 <section class="products_block">
-
-  <%= image_tag @product.images_url(:thumb) %>
-  <ul>
-    <li>
-        <%= @product.name %>
-    </li>
-    <li>
-        <%= @product.description %>
-    </li>
-    <li>
-        <%= @product.size %> gramms
-    </li>
-    <li>
-        <%= @product.price %> mdl
-    </li>
-    <li>
-      <%= button_to "Добавить в корзину", line_items_path(:product_id => @product), :remote => true %>
-    </li>
-  </ul>
+  <section class="products_background">
+      <%= image_tag @product.images_url(:thumb) %>
+      <ul>
+        <li>
+            <%= @product.name %>
+        </li>
+        <li>
+            <%= @product.description %>
+        </li>
+        <li>
+            <%= @product.size %> gramms
+        </li>
+        <li>
+            <%= @product.price %> mdl
+        </li>
+        <li>
+          <%= button_to "Добавить в корзину", line_items_path(:product_id => @product), :remote => true %>
+        </li>
+      </ul>
+    </section>
 
 </section>

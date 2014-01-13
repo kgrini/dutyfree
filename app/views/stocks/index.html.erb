@@ -1,16 +1,13 @@
-
-
-<section class="main_block">
-  <h4>Все акции</h4>
-    <ul>
-      <% @stocks.each do |stock| %>
-          <li>
-              <%= image_tag stock.images_url(:thumb) %>
-              <%= stock.description %>
-          </li>
-
-      <% end %>
-    </ul>
-
-  <%= will_paginate %>
+<div class = "bkg_images">
+  <%= render "shared/bg_images" %>
+</div>
+<header class = "header">
+  <%= render "shared/header" %>
+</header>
+<section class = "categories">
+  <%= render "shared/categories" %>
+</section>
+<section class="products_block">
+  <section class="products_background">
+  </section>
 </section>

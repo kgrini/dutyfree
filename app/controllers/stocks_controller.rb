@@ -3,6 +3,7 @@ class StocksController < ApplicationController
   before_filter :authenticate_admin_user!, :only => [:new, :create, :edit, :update, :destroy, :index]
   before_action :set_stock, :only => [:edit, :show, :edit, :destroy]
   before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
+  before_action :show_products, :only => [:index, :show]
 
   def index
     @stocks = Stock.paginate(:page => params[:page], :per_page => 4)
