@@ -11,7 +11,7 @@ class CartsController < InheritedResources::Base
     session[:cart_id] = nil
 
     respond_to do |format|
-      format.html { redirect_to(root_path,
+      format.html { redirect_to(orders_path,
                                 :notice => 'Your cart is currently empty' ) }
       format.xml { head :ok }
     end

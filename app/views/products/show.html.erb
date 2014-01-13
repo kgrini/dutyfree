@@ -9,8 +9,11 @@
 </section>
 <section class="products_block">
   <section class="products_background">
-      <%= image_tag @product.images_url(:thumb) %>
-      <ul>
+  </section>
+    <ul id="products_list">
+        <li  class="product_form" >
+            <%= image_tag @product.images_url(:thumb) %>
+        </li>
         <li>
             <%= @product.name %>
         </li>
@@ -27,6 +30,7 @@
           <%= button_to "Добавить в корзину", line_items_path(:product_id => @product), :remote => true %>
         </li>
       </ul>
-    </section>
+
 
 </section>
+
