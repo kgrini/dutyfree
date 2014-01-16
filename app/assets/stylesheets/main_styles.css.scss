@@ -229,6 +229,24 @@ a {
       }
     }
 
+
+  }
+
+  ul.stock_list {
+    @include settings(300px, 100%, 10px, 10px);
+    display: block;
+    position: absolute;
+    li {
+      font-color: #fff;
+      width: 600px;
+      length: 100px;
+      margin-bottom: 200px;
+    }
+
+    .float {
+      float: left;
+      margin-left: px;
+    }
   }
 
   .cart_list {

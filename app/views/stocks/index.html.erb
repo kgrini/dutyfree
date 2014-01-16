@@ -8,6 +8,18 @@
   <%= render "shared/categories" %>
 </section>
 <section class="products_block">
-  <section class="products_background">
-  </section>
+  <!--<section class="products_background">-->
+  <!--</section>-->
+
+  <ul class="stock_list">
+    <% @stocks.each do |stock| %>
+        <li>
+            <%= image_tag stock.images_url(:thumb), :class => "float" %>
+            <%= stock.description %>
+            <br><br><br><br><br><br>
+          <hr />
+        </li>
+    <% end %>
+    <% will_paginate @stocks %>
+  </ul>
 </section>
