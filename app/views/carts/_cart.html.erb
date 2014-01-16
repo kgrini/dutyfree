@@ -1,10 +1,10 @@
 
 
-<ul>
+<ul class = "cart_list">
   <%= render(cart.line_items) %>
-    <li  >Total</li>
-    <li ><%= cart.total_price %></li>
-    <li><%= button_to 'Открыть форму заказа' %></li>
+    <li>Total</li>
+    <li  ><%= cart.total_price %></li>
+    <li><%= link_to 'Сделать заказ', new_order_path %></li>
     <li><%= link_to 'Очистить товары?' , cart, :method => :delete,
                     :confirm => 'Are you sure?' %></li>
 

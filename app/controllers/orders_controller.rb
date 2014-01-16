@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
 
-  before_filter :authenticate_admin_user!, :only => [:new, :create, :edit, :update, :destroy, :index]
+  #before_filter :authenticate_admin_user!, :only => [:create, :edit, :update, :destroy]
   before_action :set_category, :only => [:show, :edit, :update, :destroy]
   before_action :all_categories, :only => [:new, :index, :edit, :show, :create]
   before_action :show_products, :only => [:index, :show]
@@ -9,8 +9,12 @@ class OrdersController < ApplicationController
   def index
     @cart = current_cart
     @order = Order.new
+
   end
   def new
+    @current_cart = current_cart
+    @order = Order.new
+    @cart = @current_cart.line_items(session[:product_id])
   end
 
   def create
@@ -24,6 +28,6 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.require(:order).permit(:name, :address, :phone, :product_id )
+    params.require(:order).permit(:name, :address, :phone, :product_id, :product_name, :product_quantity )
   end
 end

@@ -1,2 +1,17 @@
-<%= render @cart %>
-<%= render "orders/form", :order_id => @cart%>
+
+<div class = "bkg_images">
+  <%= render "shared/bg_images" %>
+</div>
+<header class = "header">
+  <%= render "shared/header" %>
+</header>
+<section class = "categories">
+  <%= render "shared/categories" %>
+</section>
+<section class="products_block">
+  <section class="products_background">
+  </section>
+  <section class = "order_background">
+    <%= render @cart %>
+  </section>
+</section>

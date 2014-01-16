@@ -28,8 +28,12 @@
 body {
   padding: 0px;
   margin: 0px;
-  background-image: image-url('fullBackground.jpg');
-  vertical-align: top;
+  background: image-url('fullBackground.jpg') no-repeat;
+//  vertical-align: top;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%;
 }
 
 h1, h2, h3, h4, p {
@@ -226,6 +230,34 @@ a {
     }
 
   }
+
+  .cart_list {
+    @include settings(100%, 650px, -15px, -40px);
+    position: absolute;
+    li {
+      @include settings(40px, 180px, 0, 0 );
+      margin: 10px;
+      text-align: center;
+      fond-color: #937966;
+      text-weigh: bold;
+      font-face: Arial;
+      font-size: 15px;
+    }
+
+    .product_line_section {
+      @include settings(23px, 650px, -15px, -40px);
+      background-color: #FFDEAD;
+//      @include corners;
+    }
+//    .product_line {
+//      display:inline-block;
+////      @include corners;
+////      background-color: #ffcc66;
+//      margin: 10px;
+//    }
+  }
+
+
 }
 
 .order_background {
