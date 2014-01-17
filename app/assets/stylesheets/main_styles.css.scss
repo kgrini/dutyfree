@@ -41,19 +41,10 @@ h1, h2, h3, h4, p {
   margin: 0px;
 }
 
-a {
-  text-decoration: none;
-  color: #614b3d;
-  //box-shadow: 1px 1px 1px #000000;
-  text-shadow: 1px 1px 1px #fff7eb;
-  &:active {
-    text-decoration: none;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-
+.positions {
+  align-content: center;
 }
+
 
 .bkg_images {
   margin-left: 50px;
@@ -62,24 +53,24 @@ a {
 
   .bottle {
     background-image: image-url('big_bottle.png');
-    @include settings(966px, 285px, 100px, 1px);
+    @include settings(966px, 285px, 100px, 10%);
     position: absolute;
   }
 
   .phone {
     background-image: image-url('phone.png');
-    @include settings(470px, 284px, 40px, 1212px);
+    @include settings(470px, 284px, 40px, 74%);
     position: absolute;
   }
 
   .top_light {
     background-image: image-url('top_light.png');
-    @include settings(757px, 1440px, 0px, 60px);
+    @include settings(757px, 1240px, 0px, 10%);
   }
 }
 
 .header {
-  @include settings(100px, 100%, -760px, 300px);
+  @include settings(100px, 1000px, -760px, 26%);
   z-index: 1;
   position: absolute;
 
@@ -119,9 +110,75 @@ a {
 
 }
 
+.navigation {
+  @include settings(59px, 927px, 200px, 50px);
+
+  ul {
+    @include settings(100%, 100%, 0px, -50px);
+    position: absolute;
+    color: #614b3d;
+    float: left;
+
+    li{
+      margin-left: .0em;
+    }
+
+    li.main_button, a {
+      @include li(107px, 59px);
+      background-image: image-url('main_button.png');
+      line-width: 0%;
+      &:active, &:hover {
+        background-image: image-url('main_button_red.png');
+      }
+    }
+
+    li.catalog_button {
+      @include li(169px, 59px);
+      background-image: image-url('catalog_button.png');
+      &:active, &:hover {
+        background-image: image-url('catalog_button_red.png');
+      }
+    }
+
+    li.delivery_button {
+      @include li(152px, 59px);
+      background-image: image-url('delivery_button.png');
+      &:active, &:hover {
+        background-image: image-url('delivery_button_red.png');
+      }
+    }
+
+    li.rules_button {
+      @include li(205px, 59px);
+      background-image: image-url('rules_button.png');
+      &:active, &:hover {
+        background-image: image-url('rules_button.png');
+      }
+    }
+
+    li.stocks_button {
+      @include li(118px, 59px);
+      background-image: image-url('stocks_button.png');
+      &:active, &:hover {
+        background-image: image-url('stocks_button_red.png');
+      }
+    }
+
+    li.contact_button {
+      @include li(181px, 59px);
+      background-image: image-url('contact_button.png');
+      &:active, &:hover {
+        background-image: image-url('contact_button_red.png');
+      }
+    }
+
+  }
+
+}
+
 .categories {
   background-color: #f1e4d3;
-  @include settings(740px, 240px, -460px, 300px);
+  @include settings(740px, 240px, -460px, 26%);
   @include  corners;
   position: absolute;
 
@@ -140,6 +197,7 @@ a {
       text-decoration: none;
       &:hover {
         color: #3f1515;
+        text-decoration: none;
       }
     }
 
@@ -149,6 +207,14 @@ a {
       font-size: 15px;
       font-family: Arial;
       margin-top: 0px;
+      a.cat_link{
+
+        text-decoration: none;
+        &:hover {
+
+          text-decoration: none;
+        }
+      }
     }
 
     .hr_category {
@@ -163,7 +229,7 @@ a {
 
 .products_block {
   position: relative;
-  @include settings(740px, 740px, -460px, 570px);
+  @include settings(740px, 740px, -460px, 40%);
 
   .products_background {
     position: absolute;
@@ -229,7 +295,13 @@ a {
       }
     }
 
-
+    .product_description {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      margin-left: 200px;
+      margin-top: 25px;
+    }
   }
 
   ul.stock_list {
@@ -265,16 +337,14 @@ a {
     .product_line_section {
       @include settings(23px, 650px, -15px, -40px);
       background-color: #FFDEAD;
-//      @include corners;
     }
-//    .product_line {
-//      display:inline-block;
-////      @include corners;
-////      background-color: #ffcc66;
-//      margin: 10px;
-//    }
-  }
 
+    ul.show_product {
+      li {
+
+      }
+    }
+  }
 
 }
 

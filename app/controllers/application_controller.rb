@@ -21,6 +21,10 @@ class ApplicationController < ActionController::Base
     redirect_to root_path
   end
 
+  rescue_from ActionView::MissingTemplate do |exception|
+    exception.redirect_to root_path
+  end
+
 private
 
   def current_cart
@@ -33,5 +37,13 @@ private
       end
       @current_cart
   end
+
+  #def record_not_found
+  #  if session[:cart_id]
+  #raise ActiveRecord::RecordNotFound
+  #    @current_cart = Cart.create!
+  #    session[:cart_id] = @current_cart.id
+  #  end
+  #end
 
 end

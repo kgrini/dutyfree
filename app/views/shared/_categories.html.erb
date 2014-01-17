@@ -3,11 +3,11 @@
 <section>
     <ul class="categories_list">
       <% @menu_categories.each do |category| %>
-          <li >
             <a href="<%= category_path(category.id) %>">
-              <b><%= category.name %></b>
+              <li >
+                <b><%= category.name %></b>
+              </li>
             </a>
-          </li>
           <li>
             <section class = "hr_category">
             </section>
