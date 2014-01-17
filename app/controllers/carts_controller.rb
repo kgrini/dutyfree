@@ -11,7 +11,9 @@ class CartsController < InheritedResources::Base
   end
 
   def show
-    show_cart_wih_exeption
+    show_cart_wih_exception
+    @cart = current_cart
+    @line_item = @cart.line_items
   end
 
   def destroy
@@ -27,7 +29,7 @@ class CartsController < InheritedResources::Base
 
   end
 
-  def show_cart_wih_exeption
+  def show_cart_wih_exception
     begin
       @cart = Cart.find(params[:id])
     rescue ActiveRecord::RecordNotFound

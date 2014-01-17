@@ -9,25 +9,36 @@ class OrdersController < ApplicationController
   def index
     @cart = current_cart
     @order = Order.new
-
   end
   def new
-    @current_cart = current_cart
+    @cart = current_cart
+    if @cart.line_items.empty?
+      redirect_to root_path
+      flash[:error] = "Ваша корзина пуста"
+    end
+
     @order = Order.new
-    @cart = @current_cart.line_items(session[:product_id])
   end
 
   def create
     @order = Order.new(order_params)
+    @order.add_line_items_from_cart(current_cart)
     if @order.save
       flash[:success] = "Заказ отправлен"
       redirect_to root_path
       @cart = current_cart.destroy
       session[:cart_id] = nil
+    else
+      @cart = current_cart
+      render :new
     end
   end
 
   def order_params
-    params.require(:order).permit(:name, :address, :phone, :product_id, :product_name, :product_quantity )
+    params.require(:order).permit(:name, :address, :phone, :email )
+  end
+
+  def add_line_items_from_cart
+
   end
 end

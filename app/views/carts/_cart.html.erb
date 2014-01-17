@@ -1,16 +1,16 @@
 
-
 <ul class = "cart_list">
-
-     <li class="product_line"><%= line_item.product.name  %></li>
+    <% @line_item.each do |line_item|%>
+    <li><%= line_item.product.name  %></li>
     <li>&times;<%=  line_item.quantity %></li>
-    <li class="product_line"><%= line_item.product.price %></li>
-    <li>Total</li>
-    <li  ><%= cart.total_price %></li>
-    <li><%= link_to 'Сделать заказ', new_order_path %></li>
-    <li><%= link_to 'Очистить товары?' , cart, :method => :delete,
-                    :confirm => 'Are you sure?' %></li>
-
+    <li><%= line_item.product.price %></li>
+    <% end %>
+  <li>Total</li>
+  <li ><%= @cart.total_price %></li>
+  <li></li>
+  <li><%= button_to 'Сделать заказ', new_order_path, :method => :get %></li>
+  <li><%= button_to 'Очистить товары?' , cart, :method => :delete,
+                  :confirm => 'Are you sure?' %></li>
 </ul>
 <br />
 
