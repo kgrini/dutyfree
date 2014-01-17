@@ -19,6 +19,8 @@ Dutyfree::Application.routes.draw do
 
   resources :static_pages
 
+  resources :sales_rules
+
   resources :categories do
     resources :products
   end
