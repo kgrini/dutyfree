@@ -26,7 +26,7 @@ class OrdersController < ApplicationController
     if @order.save
       flash[:success] = "Заказ отправлен"
       redirect_to root_path
-      @cart = current_cart.destroy
+      Cart.destroy(session[:cart_id])
       session[:cart_id] = nil
     else
       @cart = current_cart

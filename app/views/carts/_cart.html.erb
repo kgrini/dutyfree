@@ -1,10 +1,6 @@
 
 <ul class = "cart_list">
-    <% @line_item.each do |line_item|%>
-    <li><%= line_item.product.name  %></li>
-    <li>&times;<%=  line_item.quantity %></li>
-    <li><%= line_item.product.price %></li>
-    <% end %>
+  <%= render(cart.line_items) %>
   <li>Total</li>
   <li ><%= @cart.total_price %></li>
   <li></li>
@@ -15,3 +11,8 @@
 <br />
 
 <br />
+<%# @line_item.each do |line_item|%>
+    <!--<li><%#= line_item.product.name  %></li>-->
+    <!--<li>&times;<%#=  line_item.quantity %></li>-->
+    <!--<li><%#= line_item.product.price %></li>-->
+<%# end %>

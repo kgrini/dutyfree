@@ -10,6 +10,8 @@
 <section class="products_block">
   <section class="products_background">
   </section>
-    <%= render "shared/products_block" %>
-    <%=  %>
+    <% @items.each do |item| %>
+        <%= item.product.name %>
+      <%= item.quantity %>
+    <% end %>
 </section>
