@@ -84,9 +84,6 @@ ActiveRecord::Schema.define(version: 20140117213545) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "product_id"
-    t.string   "product_name"
-    t.integer  "product_quantity", default: 1
   end
 
   create_table "products", force: true do |t|

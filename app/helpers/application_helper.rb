@@ -1,10 +1,11 @@
 module ApplicationHelper
-  def hidden_div_if(condition, attributes = {}, &block)
-    if condition
-      attributes["style" ] = "display: none"
+  def full_title(page_title)
+    base_title = 'Dutyfree'
+    if page_title.empty?
+      base_title
+    else
+      "#{base_title} | #{page_title}"
     end
-    content_tag("div" , attributes, &block)
   end
-
 
 end
