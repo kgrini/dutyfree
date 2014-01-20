@@ -152,7 +152,7 @@ h1, h2, h3, h4, p {
       @include li(205px, 59px);
       background-image: image-url('rules_button.png');
       &:active, &:hover {
-        background-image: image-url('rules_button.png');
+        background-image: image-url('rules_button_red.png');
       }
     }
 
