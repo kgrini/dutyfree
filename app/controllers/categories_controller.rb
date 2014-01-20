@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
     @cart = current_cart
     @category = Category.find(params[:id])
     @categories = @category
-    @products = @categories.products.paginate(:page => params[:page], :per_page => 12)
+    @products = @categories.products.paginate(:page => params[:page], :per_page => 1)
     @product = Product.new
   end
 

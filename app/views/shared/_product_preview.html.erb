@@ -1,6 +1,5 @@
 <ul id="products_list">
     <% view_products.each do |product| %>
-
       <li class="product_form" >
           <section  class = "product_name_background">
           </section>
@@ -8,8 +7,7 @@
             <%= product.name %>
           </a>
           <%= image_tag product.images_url(:thumb), :class => "img" %>
-        </li>
-
+       </li>
     <% end %>
   <%= will_paginate view_products %>
 </ul>

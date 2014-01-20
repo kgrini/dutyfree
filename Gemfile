@@ -44,6 +44,7 @@ gem 'capybara'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+gem "active_attr"
 
 group :test do
   gem 'rspec-rails'

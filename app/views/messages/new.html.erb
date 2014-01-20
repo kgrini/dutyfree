@@ -1,15 +1,15 @@
-<% provide(:title, 'Главная страница') %>
+<% provide(:title, 'Контакты') %>
 <div class = "bkg_images">
   <%= render "shared/bg_images" %>
 </div>
 <header class = "header">
-    <%= render "shared/header" %>
+  <%= render "shared/header" %>
 </header>
 <section class = "categories">
-    <%= render "shared/categories" %>
+  <%= render "shared/categories" %>
 </section>
 <section class="products_block">
   <section class="products_background">
   </section>
-    <%= render "shared/products_block" %>
+  <%= render "form", :message => @message %>
 </section>
