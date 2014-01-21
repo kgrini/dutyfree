@@ -1,7 +1,7 @@
 
 <h4>Добавить продукт</h4>
 <div class="form-group">
-    <%= form_for [@categories, @product], :html => {:multipart => true} do |f| %>
+    <%= form_for [@categories, @product], :remote => true , :html => {:multipart => true} do |f| %>
 
         <%= render 'shared/error_messages', object: @product %>
 
@@ -15,7 +15,7 @@
 
         <%= f.file_field :images, :class => 'form-control' %>
 
-        <%= f.submit 'Submit', :class => "btn btn-primary" %>
+        <%= f.submit 'Submit', :class => "btn btn-primary"%>
 
     <% end %>
 </div>

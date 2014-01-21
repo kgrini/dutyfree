@@ -7,6 +7,11 @@ class LineItemsController < InheritedResources::Base
     @line_item = @cart.add_product(product.id)
 
     @line_item.save
+
+    respond_to do |format|
+      format.html {}
+      format.js
+    end
   end
 
   def update

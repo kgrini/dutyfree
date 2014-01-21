@@ -19,7 +19,12 @@ class ProductsController < ApplicationController
     @product = @categories.products.new(product_params)
     if @product.save
       flash[:success] = "Hoorey"
-      redirect_to @categories
+
+      respond_to do |format|
+        format.html {}
+        format.js
+      end
+
     else
       flash[:error] = "Fill all fields"
       render :new
