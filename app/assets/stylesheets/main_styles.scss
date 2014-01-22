@@ -1,8 +1,6 @@
 // Place all the styles related to the Static_pages controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
-
 @import "bootstrap";
 
 @mixin settings($height, $width, $top, $left) {
@@ -13,10 +11,10 @@
 }
 
 @mixin corners {
-  border-radius:6px;
+//  border-radius: 6px;
   -webkit-border-radius:6px;
   -moz-border-radius:5px;
-  -khtml-border-radius:10px;
+//  -khtml-border-radius: 10px;
 
 }
 
@@ -29,7 +27,6 @@ body {
   padding: 0px;
   margin: 0px;
   background: image-url('fullBackground.jpg') no-repeat;
-//  vertical-align: top;
   -moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
@@ -120,13 +117,13 @@ h1, h2, h3, h4, p {
     float: left;
 
     li{
-      margin-left: .0em;
+      margin-left: 0px;
     }
 
     li.main_button, a {
       @include li(107px, 59px);
       background-image: image-url('main_button.png');
-      line-width: 0%;
+//      line-width: 0%;
       &:active, &:hover {
         background-image: image-url('main_button_red.png');
       }
@@ -203,7 +200,7 @@ h1, h2, h3, h4, p {
 
     li {
       margin: -10px;
-      font-color: #614b3d;
+      color: #614b3d;
       font-size: 15px;
       font-family: Arial;
       margin-top: 0px;
@@ -309,9 +306,9 @@ h1, h2, h3, h4, p {
     display: block;
     position: absolute;
     li {
-      font-color: #fff;
+      color: #fff;
       width: 600px;
-      length: 100px;
+      height: 100px;
       margin-bottom: 150px;
     }
 
@@ -328,9 +325,8 @@ h1, h2, h3, h4, p {
       @include settings(40px, 180px, 0, 0 );
       margin: 10px;
       text-align: center;
-      fond-color: #937966;
-      text-weigh: bold;
-      font-face: Arial;
+      color: #937966;
+      font-family: Arial;
       font-size: 15px;
     }
 
