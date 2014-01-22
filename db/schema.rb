@@ -100,6 +100,9 @@ ActiveRecord::Schema.define(version: 20140121142944) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "product_id"
+    t.string   "product_name"
+    t.integer  "product_quantity", default: 1
   end
 
   create_table "products", force: true do |t|
@@ -127,6 +130,7 @@ ActiveRecord::Schema.define(version: 20140121142944) do
     t.string   "images"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
   end
 
   create_table "users", force: true do |t|

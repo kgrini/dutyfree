@@ -25,5 +25,7 @@ module Dutyfree
       g.test_framework  :rspec, fixtures: true, views: false
       g.fixture_replacement :factory_girl, :dir => "spec/factories"
     end
+
+    config.assets.initialize_on_precompile = false
   end
 end
