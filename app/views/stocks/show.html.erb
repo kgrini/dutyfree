@@ -1,13 +1,18 @@
 <% provide(:title, 'Акции') %>
-
-<%= render "shared/column_menu" %>
-
-<section class="main_block">
-   <h4>Акция</h4>
+<div class = "bkg_images">
+  <%= render "shared/bg_images" %>
+</div>
+<header class = "header">
+  <%= render "shared/header" %>
+</header>
+<section class = "categories">
+  <%= render "shared/categories" %>
+</section>
+<section class="products_block">
+  <section class="products_background">
+  </section>
+  
     <%= image_tag @stock.images_url(:thumb) %>
     <%= @stock.description %>
 
 </section>
-<%= link_to "All Stocks", stocks_path %>
-<%= link_to "Edit", edit_stock_path(@stock) %>
-<%= link_to "Delete", @stock, method: :delete, :confirm => "Are you Sure?" %>

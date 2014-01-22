@@ -11,6 +11,8 @@ class StocksController < ApplicationController
   end
 
   def show
+    @cart = current_cart
+    @stock = Stock.find(params[:id])
   end
 
   def new

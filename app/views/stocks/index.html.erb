@@ -11,7 +11,6 @@
 <section class="products_block">
   <section class="products_background">
   </section>
-  <%#= render "shared/products_block" %>
   <ul class="stock_list">
 
         <% @stocks.each do |stock| %>
@@ -20,11 +19,13 @@
                 <%= stock.description %>
               <br>
                 <%= link_to "Далее",  stock_path(stock)%>
-                <br><br><br><br><br><br>
-              <hr />
+                <!--<br><br><br><br><br><br>-->
+              <!--<hr />-->
             </li>
         <% end %>
-    <%= will_paginate @stocks  %>
+        <li>
+            <%= will_paginate @stocks  %>
+        </li>
   </ul>
 
 </section>
