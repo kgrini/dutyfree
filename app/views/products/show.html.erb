@@ -17,16 +17,16 @@
         </li>
         <section class="product_description">
             <li>
-                <b>Имя:</b> <%= @product.name %>
+                <b><%= t "products.show.name" %>:</b> <%= @product.name %>
             </li>
             <li>
-              <b>Описание:</b> <%= @product.description %>
+              <b><%= t ".description" %>:</b> <%= @product.description %>
             </li>
             <li>
-              <b>Граммаж:</b> <%= @product.size %> gramms
+              <b><%= t ".wieght" %>:</b> <%= @product.size %> gramms
             </li>
             <li>
-              <b>Цена:</b> <%= @product.price %> mdl
+              <b><%= t ".price" %>:</b> <%= @product.price %> mdl
             </li>
             <li>
                 <%= button_to "Добавить в корзину", line_items_path(:product_id => @product), :remote => true, :id => "button" %>
