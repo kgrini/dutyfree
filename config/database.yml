@@ -51,11 +51,11 @@ test:
   pool: 5
   username: dutyfree
   password: qwerty
-#
-#production:
-#  adapter: postgresql
-#  encoding: unicode
-#  database: dutyfree_production
-#  pool: 5
-#  username: dutyfree
-#  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: dutyfree_production
+  pool: 5
+  username: 
+  password:
