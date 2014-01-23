@@ -57,5 +57,5 @@ production:
   encoding: unicode
   database: dutyfree_production
   pool: 5
-  username: 
+  username:
   password:
