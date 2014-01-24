@@ -12,15 +12,14 @@
   <section class="products_background">
   </section>
   <ul class="stock_list">
-
         <% @stocks.each do |stock| %>
             <li>
                 <%= image_tag stock.images_url(:thumb), :class => "float" %>
                 <%= stock.description %>
-              <br>
-                <%= link_to "Далее",  stock_path(stock)%>
-                <!--<br><br><br><br><br><br>-->
-              <!--<hr />-->
+            </li>
+            <li>
+              <%= link_to "Далее",  stock_path(stock)%>
+              <hr>
             </li>
         <% end %>
         <li>
