@@ -16,10 +16,10 @@ class ApplicationController < ActionController::Base
   ## Raises RoutingError which will be rescued from in the
   ## same way as other exceptions.
   #
-  #def raise_not_found!
-  #  #raise ActionController::RoutingError.new("No route matches #{params[:unmatched_route]}")
-  #  redirect_to root_path
-  #end
+  def raise_not_found!
+    #raise ActionController::RoutingError.new("No route matches #{params[:unmatched_route]}")
+    redirect_to root_path
+  end
 
   rescue_from ActionView::MissingTemplate do |exception|
     exception.render "public/404"
