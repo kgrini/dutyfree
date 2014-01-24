@@ -5,8 +5,19 @@ class SalesRulesController < ApplicationController
   before_action :show_products, :only => [:index]
 
   def index
-    @items = LineItem.where("order_id = ?", 6)
+    @sale_rule = SalesRule.all
     @cart = current_cart
   end
 
+  def create
+    @sale_rule = SalesRule.new(sale_params)
+    if @sale_rule.save
+      redirect_to root_path
+    end
+  end
+
+
+  def sale_params
+    params.require(:sales_rules).permit(:description)
+  end
 end

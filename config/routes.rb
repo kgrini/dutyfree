@@ -21,8 +21,6 @@ Dutyfree::Application.routes.draw do
 
   resources :sales_rules
 
-  resources :contacts
-
   resources :categories do
     resources :products
   end

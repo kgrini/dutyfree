@@ -11,8 +11,7 @@
 <section class="products_block">
   <section class="products_background">
   </section>
-    <% @items.each do |item| %>
-        <%= item.product.name %>
-      <%= item.quantity %>
+    <% @sale_rule.each do |rule| %>
+      <%= rule.description %>
     <% end %>
 </section>

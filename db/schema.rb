@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140121142944) do
+ActiveRecord::Schema.define(version: 20140117213545) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,14 +62,6 @@ ActiveRecord::Schema.define(version: 20140121142944) do
 
   add_index "categories", ["name"], name: "index_categories_on_name", unique: true, using: :btree
 
-  create_table "contacts", force: true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "deliveries", force: true do |t|
     t.text     "description"
     t.datetime "created_at"
@@ -85,14 +77,6 @@ ActiveRecord::Schema.define(version: 20140121142944) do
     t.integer  "order_id"
   end
 
-  create_table "messages", force: true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "orders", force: true do |t|
     t.integer  "phone"
     t.string   "name"
@@ -100,9 +84,6 @@ ActiveRecord::Schema.define(version: 20140121142944) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "product_id"
-    t.string   "product_name"
-    t.integer  "product_quantity", default: 1
   end
 
   create_table "products", force: true do |t|
@@ -130,7 +111,6 @@ ActiveRecord::Schema.define(version: 20140121142944) do
     t.string   "images"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title"
   end
 
   create_table "users", force: true do |t|
