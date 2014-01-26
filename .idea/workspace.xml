@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0eb957e-af24-46c5-b443-00a1a8ae9e55" name="Default" comment="Was made authorization with re-direct to categories page. Also, products controller under the categories branch">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/contact.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/contacts/create.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dutyfree.iml" afterPath="$PROJECT_DIR$/.idea/dutyfree.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="dutyfree.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,10 +73,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="48" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.61935484" vertical-offset="0" max-vertical-offset="775">
+            <state line="30" column="0" selection-start="1114" selection-end="1508" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="40" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.9032258" vertical-offset="590" max-vertical-offset="1455">
               <folding />
             </state>
           </provider>
@@ -135,7 +136,6 @@
         <option value="$PROJECT_DIR$/log/development.log" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/models/sales_rule.rb" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
@@ -160,6 +160,7 @@
         <option value="$PROJECT_DIR$/app/views/contacts/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -822,11 +823,6 @@
         <state line="15" column="14" selection-start="410" selection-end="410" vertical-scroll-proportion="0.2836485" vertical-offset="0" max-vertical-offset="899" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="928" selection-end="928" vertical-scroll-proportion="0.18875" vertical-offset="149" max-vertical-offset="1290" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_categories.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="47" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="330">
@@ -906,7 +902,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="48" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.61935484" vertical-offset="0" max-vertical-offset="775">
+        <state line="30" column="0" selection-start="1114" selection-end="1508" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="40" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.9032258" vertical-offset="590" max-vertical-offset="1455">
           <folding />
         </state>
       </provider>

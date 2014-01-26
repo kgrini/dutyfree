@@ -77,4 +77,15 @@ Dutyfree::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => 'dutyfree-kgrini.herokuapp.com',
+      :user_name            => 'kirill.grini',
+      :password             => 'gh0ktnfhbfn',
+      :authentication       => "plain",
+      :enable_starttls_auto => true  }
+
 end
