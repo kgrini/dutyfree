@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0eb957e-af24-46c5-b443-00a1a8ae9e55" name="Default" comment="Was made authorization with re-direct to categories page. Also, products controller under the categories branch">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/contact.rb" afterPath="$PROJECT_DIR$/app/models/contact.rb" />
     </list>
     <ignored path="dutyfree.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="1395">
+            <state line="17" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
               <folding />
             </state>
           </provider>
@@ -82,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contact.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/contact.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+            <state line="10" column="38" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -175,10 +175,10 @@
         <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/contacts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contacts/contact.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/contact.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/contact.rb" />
       </list>
     </option>
   </component>
@@ -878,13 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/contact.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="30" selection-start="197" selection-end="197" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="270">
@@ -929,7 +922,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="1395">
+        <state line="17" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/contact.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="38" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
