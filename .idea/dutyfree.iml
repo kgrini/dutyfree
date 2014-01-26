@@ -161,6 +161,7 @@
     <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v4.1.1, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v0.15.1, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, ruby-2.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mail_form (v1.5.0, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25.1, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_magick (v3.7.0, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.5.2, ruby-2.1.0-p0) [gem]" level="application" />
@@ -182,7 +183,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.14.4, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.14.4, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v2.14.1, ruby-2.1.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.13, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v4.0.1, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.0, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.10.1, ruby-2.1.0-p0) [gem]" level="application" />
