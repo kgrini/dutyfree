@@ -25,7 +25,7 @@ Dutyfree::Application.routes.draw do
     resources :products
   end
 
-  resources "contacts", only: [:new, :create]
+  resources :contacts, only: [:new, :create]
 
 
   match "*unmatched_route" => "application#raise_not_found!", :via => [:get, :post]
