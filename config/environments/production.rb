@@ -81,7 +81,7 @@ Dutyfree::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       :address              => "smtp.mail.ru",
-      :port                 => 465,
+      :port                 => 587,
       :domain               => 'dutyfree-kgrini.herokuapp.com',
       :user_name            => 'kgrini',
       :password             => 'worior',
