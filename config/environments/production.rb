@@ -85,7 +85,8 @@ Dutyfree::Application.configure do
       :domain               => 'dutyfree-kgrini.herokuapp.com',
       :user_name            => 'kgrini',
       :password             => 'worior',
-      :authentication       => "plain",
-      :enable_starttls_auto => true  }
+      :authentication       => :login,
+      :enable_starttls_auto => true,
+      :openssl_verify_mode => "none"  }
 
 end
