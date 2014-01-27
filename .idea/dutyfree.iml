@@ -183,6 +183,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.14.4, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.14.4, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v2.14.1, ruby-2.1.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.14, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v4.0.1, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.0, ruby-2.1.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.10.1, ruby-2.1.0-p0) [gem]" level="application" />
