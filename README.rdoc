@@ -3,7 +3,7 @@
 My app on production:
 http://dutyfree-kgrini.herokuapp.com
 
-Admin login:
+Admin site:
 http://dutyfree-kgrini.herokuapp.com/admin/
 
 Admin login: admin@gmail.com
