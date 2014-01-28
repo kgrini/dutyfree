@@ -223,10 +223,26 @@ h1, h2, h3, h4, p {
   }
 }
 
+.main_background {
+  position: absolute;
+  background-color: #fff;
+  @include settings(740px, 740px, 0px, 0px);
+  @include corners;
+  opacity: 0.4;
+}
 
 .products_block {
   position: relative;
   @include settings(740px, 740px, -460px, 40%);
+
+  .main_background {
+    position: absolute;
+    background-color: #fff;
+    @include settings(740px, 740px, 0px, 0px);
+    @include corners;
+    opacity: 0.4;
+  }
+
 
   .products_background {
     position: absolute;
@@ -234,7 +250,6 @@ h1, h2, h3, h4, p {
     @include settings(740px, 740px, 0px, 0px);
     @include corners;
     opacity: 0.4;
-
   }
 
   .last_added_products_title {
