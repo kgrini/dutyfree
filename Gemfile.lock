@@ -40,6 +40,10 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    active_admin_editor (1.1.0)
+      activeadmin (>= 0.4.0)
+      ejs
+      rails (>= 3.0.0)
     active_attr (0.8.2)
       activemodel (>= 3.0.2, < 4.1)
       activesupport (>= 3.0.2, < 4.1)
@@ -94,6 +98,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.0.2)
     factory_girl (4.3.0)
@@ -231,6 +236,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  active_admin_editor
   active_attr
   activeadmin!
   bcrypt-ruby (~> 3.1.2)
