@@ -24,8 +24,6 @@
 }
 
 body {
-  padding: 0px;
-  margin: 0px;
   background: image-url('fullBackground.jpg') no-repeat;
   -moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -39,201 +37,193 @@ h1, h2, h3, h4, p {
 }
 
 .positions {
-  align-content: center;
-}
 
+  width: 1468px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 1px;
 
-.bkg_images {
-  margin-left: 50px;
-  margin-top: 0px;
-  z-index: 0;
+  .bkg_images {
+    z-index: 0;
 
-  .bottle {
-    background-image: image-url('big_bottle.png');
-    @include settings(966px, 285px, 100px, 10%);
-    position: absolute;
-  }
-
-  .phone {
-    background-image: image-url('phone.png');
-    @include settings(470px, 284px, 40px, 74%);
-    position: absolute;
-  }
-
-  .top_light {
-    background-image: image-url('top_light.png');
-    @include settings(757px, 1240px, 0px, 10%);
-  }
-}
-
-.header {
-  @include settings(100px, 1000px, -760px, 26%);
-  z-index: 1;
-  position: absolute;
-
-  .original_design {
-    background-image: image-url('original_design.png');
-    @include settings(84px, 280px, 80px, 0px);
-    float: left;
-  }
-
-  .logo {
-    background-image: image-url('logo.png');
-    @include settings(172px, 261px, 0px, 350px);
-    float: left;
-    z-index: 3;
-    position: absolute;
-  }
-
-  .hours {
-    background-image: image-url('24_hours.png');
-    @include settings(31px, 339px, 113px, 636px);
-    float: left;
-    position: absolute;
-  }
-
-
-  .filter_by_price {
-    background-image: image-url('filter_by_price.png');
-    @include settings(16px, 179px, 20px, 28px);
-    position: absolute;
-  }
-
-  .filter_by_litr {
-    background-image: image-url('filter_by_litr.png');
-    @include settings(16px, 273px, 20px, 268px);
-    position: absolute;
-  }
-
-}
-
-.navigation {
-  @include settings(59px, 927px, 200px, 50px);
-
-  ul {
-    @include settings(100%, 100%, 0px, -50px);
-    position: absolute;
-    color: #614b3d;
-    float: left;
-
-    li{
-      margin-left: 0px;
+    .bottle {
+      background-image: image-url('big_bottle.png');
+      @include settings(966px, 285px, 120px, 0px);
+      position: absolute;
     }
 
-    li.main_button, a {
-      @include li(107px, 59px);
-      background-image: image-url('main_button.png');
-//      line-width: 0%;
-      &:active, &:hover {
-        background-image: image-url('main_button_red.png');
-      }
+    .phone {
+      background-image: image-url('phone.png');
+      @include settings(470px, 284px, 70px, 1230px);
+      position: absolute;
     }
 
-    li.catalog_button {
-      @include li(169px, 59px);
-      background-image: image-url('catalog_button.png');
-      &:active, &:hover {
-        background-image: image-url('catalog_button_red.png');
-      }
+    .top_light {
+      background-image: image-url('top_light.png');
+      @include settings(757px, 1240px, 0px, 75px);
+      position: absolute;
+    }
+  }
+
+
+
+  .header {
+    @include settings(100px, 1000px, 0px, 280px);
+    z-index: 1;
+    position: absolute;
+
+    .original_design {
+      background-image: image-url('original_design.png');
+      @include settings(84px, 280px, 80px, 0px);
+      float: left;
     }
 
-    li.delivery_button {
-      @include li(152px, 59px);
-      background-image: image-url('delivery_button.png');
-      &:active, &:hover {
-        background-image: image-url('delivery_button_red.png');
-      }
+    .logo {
+      background-image: image-url('logo.png');
+      @include settings(172px, 261px, 0px, 350px);
+      float: left;
+      z-index: 3;
+      position: absolute;
     }
 
-    li.rules_button {
-      @include li(205px, 59px);
-      background-image: image-url('rules_button.png');
-      &:active, &:hover {
-        background-image: image-url('rules_button_red.png');
-      }
+    .hours {
+      background-image: image-url('24_hours.png');
+      @include settings(31px, 339px, 113px, 636px);
+      float: left;
+      position: absolute;
     }
 
-    li.stocks_button {
-      @include li(118px, 59px);
-      background-image: image-url('stocks_button.png');
-      &:active, &:hover {
-        background-image: image-url('stocks_button_red.png');
-      }
+
+    .filter_by_price {
+      background-image: image-url('filter_by_price.png');
+      @include settings(16px, 179px, 20px, 28px);
+      position: absolute;
     }
 
-    li.contact_button {
-      @include li(181px, 59px);
-      background-image: image-url('contact_button.png');
-      &:active, &:hover {
-        background-image: image-url('contact_button_red.png');
-      }
+    .filter_by_litr {
+      background-image: image-url('filter_by_litr.png');
+      @include settings(16px, 273px, 20px, 268px);
+      position: absolute;
     }
 
   }
 
-}
 
-.categories {
-  background-color: #f1e4d3;
-  @include settings(740px, 240px, -460px, 26%);
-  @include  corners;
-  position: absolute;
+  .navigation {
+    @include settings(59px, 927px, 200px, 50px);
 
-  .categories_title {
-    @include settings(26px, 103px, 15px, 20px);
-    background-image: image-url('categories.png');
-    position: absolute;
-  }
-
-  ul.categories_list {
-    @include settings(100%, 100%, 75px, 10px);
-    display: block;
-    position: absolute;
-    a {
+    ul {
+      @include settings(100%, 100%, 0px, -50px);
+      position: absolute;
       color: #614b3d;
-      text-decoration: none;
-      &:hover {
-        color: #3f1515;
-        text-decoration: none;
+      float: left;
+
+      li{
+        margin-left: 0px;
       }
+
+      li.main_button, a {
+        @include li(107px, 59px);
+        background-image: image-url('main_button.png');
+        &:active, &:hover {
+          background-image: image-url('main_button_red.png');
+        }
+      }
+
+      li.catalog_button {
+        @include li(169px, 59px);
+        background-image: image-url('catalog_button.png');
+        &:active, &:hover {
+          background-image: image-url('catalog_button_red.png');
+        }
+      }
+
+      li.delivery_button {
+        @include li(152px, 59px);
+        background-image: image-url('delivery_button.png');
+        &:active, &:hover {
+          background-image: image-url('delivery_button_red.png');
+        }
+      }
+
+      li.rules_button {
+        @include li(205px, 59px);
+        background-image: image-url('rules_button.png');
+        &:active, &:hover {
+          background-image: image-url('rules_button_red.png');
+        }
+      }
+
+      li.stocks_button {
+        @include li(118px, 59px);
+        background-image: image-url('stocks_button.png');
+        &:active, &:hover {
+          background-image: image-url('stocks_button_red.png');
+        }
+      }
+
+      li.contact_button {
+        @include li(181px, 59px);
+        background-image: image-url('contact_button.png');
+        &:active, &:hover {
+          background-image: image-url('contact_button_red.png');
+        }
+      }
+
     }
 
-    li {
-      margin: -10px;
-      color: #614b3d;
-      font-size: 15px;
-      font-family: Arial;
-      margin-top: 0px;
-      a.cat_link{
+  }
 
+  .categories {
+    background-color: #f1e4d3;
+    @include settings(740px, 240px, 300px, 270px);
+    @include  corners;
+    position: absolute;
+
+    .categories_title {
+      @include settings(26px, 103px, 15px, 20px);
+      background-image: image-url('categories.png');
+      position: absolute;
+    }
+
+    ul.categories_list {
+      @include settings(100%, 100%, 75px, 10px);
+      display: block;
+      position: absolute;
+      a {
+        color: #614b3d;
         text-decoration: none;
         &:hover {
-
+          color: #3f1515;
           text-decoration: none;
         }
       }
-    }
 
-    .hr_category {
-      height: 7px;
-      width: 187px;
-      margin-top: 10px;
-      background-image: image-url('hr_caterogy.png');
+      li {
+        margin: -10px;
+        color: #614b3d;
+        font-size: 15px;
+        font-family: Arial;
+        margin-top: 0px;
+        a.cat_link{
+
+          text-decoration: none;
+          &:hover {
+
+            text-decoration: none;
+          }
+        }
+      }
+
+      .hr_category {
+        height: 7px;
+        width: 187px;
+        margin-top: 10px;
+        background-image: image-url('hr_caterogy.png');
+      }
     }
   }
-}
-
-.main_background {
-  position: absolute;
-  background-color: #fff;
-  @include settings(740px, 740px, 0px, 0px);
-  @include corners;
-  opacity: 0.4;
-}
-
-.products_block {
-  position: relative;
-  @include settings(740px, 740px, -460px, 40%);
 
   .main_background {
     position: absolute;
@@ -243,119 +233,130 @@ h1, h2, h3, h4, p {
     opacity: 0.4;
   }
 
-
-  .products_background {
+  .products_block {
+    @include settings(740px, 740px, 300px, 540px);
     position: absolute;
-    background-color: #fff;
-    @include settings(740px, 740px, 0px, 0px);
-    @include corners;
-    opacity: 0.4;
-  }
 
-  .last_added_products_title {
-    @include settings(16px, 273px, 23px, 20px);
-    background-image: image-url('last_added_products.png');
-    position: absolute;
-  }
-
-  ul#products_list {
-    position: absolute;
-    @include settings(740px, 740px, 80px, -20px);
-    float: left;
-    display:inline-block;
-
-    li.product_form {
-      display: inline;
-      @include settings(160px, 162px, 15px, 15px);
+    .main_background {
+      position: absolute;
+      background-color: #fff;
+      @include settings(740px, 740px, 0px, 0px);
       @include corners;
-      background-color: #937966;
-      position: relative;
-      text-align: center;
+      opacity: 0.4;
     }
 
 
-    .img {
+    .products_background {
+      position: absolute;
+      background-color: #fff;
+      @include settings(740px, 740px, 0px, 0px);
       @include corners;
-      z-index: 10;
-      margin-top: 5px;
-      background-color: #000;
+      opacity: 0.4;
     }
 
-    .product_name_background {
+    .last_added_products_title {
+      @include settings(16px, 273px, 23px, 20px);
+      background-image: image-url('last_added_products.png');
       position: absolute;
-      margin-top: 115px;
-      margin-left: 6px;
-      height: 40px;
-      width: 150px;
-      background-color: #000;
-      opacity: 0.6;
-      z-index: 11;
     }
 
-    .product_link {
+    ul#products_list {
       position: absolute;
-      margin-top: 120px;
-      z-index: 12;
-      font-size: 18px;
-      font-family: Arial;
-      color: #fff;
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    .product_description {
-      height: 100px;
-      width: 100px;
-      position: absolute;
-      margin-left: 200px;
-      margin-top: 25px;
-    }
-  }
-
-  ul.stock_list {
-    @include settings(100%, 100%, 26px, 10px);
-    display: block;
-    position: absolute;
-    li {
-      color: #fff;
-      width: 600px;
-      height: 100px;
-      margin-bottom: 10px;
-    }
-
-    .float {
+      @include settings(740px, 740px, 80px, -20px);
       float: left;
-      margin-left: 10px;
-    }
-  }
+      display:inline-block;
 
-  .cart_list {
-    @include settings(100%, 650px, -15px, -40px);
-    position: absolute;
-    li {
-      @include settings(40px, 180px, 0, 0 );
-      margin: 10px;
-      text-align: center;
-      color: #937966;
-      font-family: Arial;
-      font-size: 15px;
-    }
+      li.product_form {
+        display: inline;
+        @include settings(160px, 162px, 15px, 15px);
+        @include corners;
+        background-color: #937966;
+        position: relative;
+        text-align: center;
+      }
 
-    .product_line_section {
-      @include settings(23px, 650px, -15px, -40px);
-      background-color: #FFDEAD;
-    }
 
-    ul.show_product {
-      li {
+      .img {
+        @include corners;
+        z-index: 10;
+        margin-top: 5px;
+        background-color: #000;
+      }
 
+      .product_name_background {
+        position: absolute;
+        margin-top: 115px;
+        margin-left: 6px;
+        height: 40px;
+        width: 150px;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: 11;
+      }
+
+      .product_link {
+        position: absolute;
+        margin-top: 120px;
+        z-index: 12;
+        font-size: 18px;
+        font-family: Arial;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .product_description {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 25px;
       }
     }
+
+    ul.stock_list {
+      @include settings(100%, 100%, 26px, 10px);
+      display: block;
+      position: absolute;
+      li {
+        color: #fff;
+        width: 600px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+
+      .float {
+        float: left;
+        margin-left: 10px;
+      }
+    }
+
+    .cart_list {
+      @include settings(100%, 650px, -15px, -40px);
+      position: absolute;
+      li {
+        @include settings(40px, 180px, 0, 0 );
+        margin: 10px;
+        text-align: center;
+        color: #937966;
+        font-family: Arial;
+        font-size: 15px;
+      }
+
+      .product_line_section {
+        @include settings(23px, 650px, -15px, -40px);
+        background-color: #FFDEAD;
+      }
+
+    }
+
   }
+
 
 }
+
 
 .order_background {
 
