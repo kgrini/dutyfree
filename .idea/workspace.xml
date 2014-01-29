@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0eb957e-af24-46c5-b443-00a1a8ae9e55" name="Default" comment="Was made authorization with re-direct to categories page. Also, products controller under the categories branch">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/abouts.rb" afterPath="$PROJECT_DIR$/app/admin/abouts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dutyfree.iml" afterPath="$PROJECT_DIR$/.idea/dutyfree.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dutyfree.iws" />
@@ -35,7 +34,25 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="412" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="360">
+            <state line="13" column="18" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="36" selection-start="387" selection-end="387" vertical-scroll-proportion="0.20625" vertical-offset="0" max-vertical-offset="800">
               <folding />
             </state>
           </provider>
@@ -45,26 +62,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_styles.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="42" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="-0.0" vertical-offset="630" max-vertical-offset="5520">
-              <folding>
-                <marker date="1391014512304" expanded="true" signature="804:838" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="abouts.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/admin/abouts.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0952986" vertical-offset="0" max-vertical-offset="787">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="15" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
@@ -89,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shared/_product_preview.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stocks/_all_stocks.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/products.js" />
         <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
@@ -128,7 +124,6 @@
         <option value="$PROJECT_DIR$/app/views/contacts/contact.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/config/application.rb" />
@@ -137,9 +132,11 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main_styles.css.scss" />
         <option value="$PROJECT_DIR$/app/admin/abouts.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
       </list>
     </option>
   </component>
@@ -214,6 +211,38 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="dutyfree">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dutyfree">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dutyfree">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="environments">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -534,11 +563,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="925" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/rules_button_red.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -699,16 +723,6 @@
         <state line="30" column="0" selection-start="1114" selection-end="1508" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="20" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.625" vertical-offset="655" max-vertical-offset="1470" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="40" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.2572973" vertical-offset="561" max-vertical-offset="1581" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="38" selection-start="315" selection-end="315" vertical-scroll-proportion="0.18378378" vertical-offset="0" max-vertical-offset="925" />
@@ -769,9 +783,16 @@
         <state line="4" column="9" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0754717" vertical-offset="0" max-vertical-offset="901" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/admin/abouts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="412" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="360">
+        <state line="2" column="23" selection-start="54" selection-end="54" vertical-scroll-proportion="0.038119443" vertical-offset="0" max-vertical-offset="787">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="15" selection-start="456" selection-end="456" vertical-scroll-proportion="0.39375" vertical-offset="0" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
@@ -779,22 +800,34 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_styles.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="5520">
-          <folding>
-            <marker date="1391014512304" expanded="true" signature="804:838" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="15" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/abouts.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0952986" vertical-offset="0" max-vertical-offset="787">
+        <state line="13" column="18" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="3251" selection-end="3251" vertical-scroll-proportion="0.83125" vertical-offset="520" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="36" selection-start="387" selection-end="387" vertical-scroll-proportion="0.20625" vertical-offset="0" max-vertical-offset="800">
           <folding />
         </state>
       </provider>
