@@ -1,6 +1,5 @@
 Dutyfree::Application.routes.draw do
 
-
   resources :line_items
 
   resources :carts
@@ -10,7 +9,7 @@ Dutyfree::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  root 'abouts#index'
+  root 'static_pages#index'
 
   resources :stocks
 

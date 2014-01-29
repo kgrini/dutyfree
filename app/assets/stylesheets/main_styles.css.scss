@@ -265,44 +265,46 @@ h1, h2, h3, h4, p {
       @include settings(740px, 740px, 80px, -20px);
       float: left;
       display:inline-block;
-//      text-align: center;
 
       li.product_form {
+        display: inline;
         @include settings(160px, 162px, 15px, 15px);
         @include corners;
         background-color: #937966;
         position: relative;
+        text-align: center;
+      }
 
-        .img {
-          @include corners;
-          z-index: 10;
-          margin-top: 5px;
-          margin-left: 6px;
-          background-color: #000;
-        }
 
-        .product_name_background {
-          @include settings(40px, 150px, 115px, 6px);
-          position: absolute;
-          background-color: #000;
-          opacity: 0.6;
-          z-index: 11;
-          text-align: center;
-        }
+      .img {
+        @include corners;
+        z-index: 10;
+        margin-top: 5px;
+        background-color: #000;
+      }
 
-        .product_link {
-          position: relative;
-          margin-top: 10px;
-          z-index: 12;
-          font-size: 18px;
-          font-family: Arial;
-          color: #fff;
+      .product_name_background {
+        position: absolute;
+        margin-top: 115px;
+        margin-left: 6px;
+        height: 40px;
+        width: 150px;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: 11;
+      }
+
+      .product_link {
+        position: absolute;
+        margin-top: 120px;
+        z-index: 12;
+        font-size: 18px;
+        font-family: Arial;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
           text-decoration: none;
-          &:hover {
-            text-decoration: none;
-          }
         }
-
       }
 
       .product_description {

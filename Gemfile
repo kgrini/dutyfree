@@ -19,8 +19,6 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'haml'
 
-gem 'active_admin_editor'
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
