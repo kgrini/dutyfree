@@ -16,7 +16,7 @@ class ContactsController < ApplicationController
       redirect_to root_path, :notice => "Сообщение отправленно"
     else
       flash.now[:error] = 'Cannot send message.'
-      render :new
+      render "new"
     end
   end
 

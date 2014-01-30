@@ -1,8 +1,9 @@
 
 <ul class = "cart_list">
   <%= render(cart.line_items) %>
-  <li>Total</li>
-  <li ><%= @cart.total_price %></li>
+  <li><b>Итог</b></li>
+  <li></li>
+  <li ><b><%= @cart.total_price %></b></li>
   <li></li>
   <li><%= button_to 'Сделать заказ', new_order_path, :method => :get %></li>
   <li><%= button_to 'Очистить товары?' , cart, :method => :delete,
@@ -11,8 +12,3 @@
 <br />
 
 <br />
-<%# @line_item.each do |line_item|%>
-    <!--<li><%#= line_item.product.name  %></li>-->
-    <!--<li>&times;<%#=  line_item.quantity %></li>-->
-    <!--<li><%#= line_item.product.price %></li>-->
-<%# end %>

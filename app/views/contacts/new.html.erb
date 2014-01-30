@@ -9,7 +9,10 @@
   <%= render "shared/categories" %>
 </section>
 <section class="products_block">
-  <!--<section class="products_background">-->
-  <!--</section>-->
-  <%= render "form", :contact => @contact %>
+  <section class="products_background">
+  </section>
+  <section class = "contact_title"></section>
+  <fieldset class = "contact_form">
+     <%= render "form", :contact => @contact %>
+  </fieldset>
 </section>

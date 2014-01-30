@@ -260,12 +260,64 @@ h1, h2, h3, h4, p {
       position: absolute;
     }
 
+    .stocks_title {
+      @include settings(18px, 56px, 23px, 20px);
+      background-image: image-url('stocks_title.png');
+      position: absolute;
+    }
+
+    .orders_title {
+      @include settings(19px, 140px, 23px, 20px);
+      background-image: image-url('send_order.png');
+      position: absolute;
+    }
+
+    .carts_title {
+      @include settings(21px, 75px, 23px, 20px);
+      background-image: image-url('basket.png');
+      position: absolute;
+    }
+
+    .contact_title {
+      @include settings(22px, 137px, 23px, 20px);
+      background-image: image-url('contact_form.png');
+      position: absolute;
+    }
+
+    .contact_form {
+      @include settings(auto, 740px, 80px, 20px);
+      position: absolute;
+    }
+
+    .about_us_title {
+      @include settings(21px, 50px, 23px, 20px);
+      background-image: image-url('about_us.png');
+      position: absolute;
+    }
+
+    .sales_title {
+      @include settings(22px, 151px, 23px, 20px);
+      background-image: image-url('sales_rules_title.png');
+      position: absolute;
+    }
+
+    .sales_background {
+      @include settings(auto, auto, 80px, 20px);
+      color: #000;
+      position: absolute;
+    }
+
+    .about_us_content {
+      @include settings(auto, auto, 80px, 20px);
+      color: #000;
+      position: absolute;
+    }
+
     ul#products_list {
       position: absolute;
       @include settings(740px, 740px, 80px, -20px);
       float: left;
       display:inline-block;
-//      text-align: center;
 
       li.product_form {
         @include settings(160px, 162px, 15px, 15px);
@@ -291,7 +343,7 @@ h1, h2, h3, h4, p {
         }
 
         .product_link {
-          position: relative;
+          position: absolute;
           margin-top: 10px;
           z-index: 12;
           font-size: 18px;
@@ -315,14 +367,14 @@ h1, h2, h3, h4, p {
     }
 
     ul.stock_list {
-      @include settings(100%, 100%, 26px, 10px);
+      @include settings(100%, 100%, 80px, 20px);
       display: block;
       position: absolute;
       li {
-        color: #fff;
+        color: #000;
         width: 600px;
         height: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
       }
 
       .float {
@@ -332,13 +384,13 @@ h1, h2, h3, h4, p {
     }
 
     .cart_list {
-      @include settings(100%, 650px, -15px, -40px);
+      @include settings(100%, 650px, 10px, 0px);
       position: absolute;
       li {
         @include settings(40px, 180px, 0, 0 );
         margin: 10px;
         text-align: center;
-        color: #937966;
+        color: #000;
         font-family: Arial;
         font-size: 15px;
       }
@@ -357,7 +409,6 @@ h1, h2, h3, h4, p {
 
 
 .order_background {
-
-  @include settings(100px, 740px, 40px, 80px);
+  @include settings(100px, 740px, 80px, 80px);
   position: absolute;
 }
