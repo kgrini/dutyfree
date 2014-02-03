@@ -2,11 +2,12 @@
     <% view_products.each do |product| %>
       <li class="product_form" >
           <section  class = "product_name_background">
-            <a href="<%= category_product_path(product.categories_id, product.id) %>" class = "product_link">
-              <%= product.name %>
-            </a>
+
           </section>
 
+        <a href="<%= category_product_path(product.categories_id, product.id) %>" class = "product_link">
+          <%= product.name %>
+        </a>
           <%= image_tag product.images_url(:thumb), :class => "img" %>
        </li>
     <% end %>
