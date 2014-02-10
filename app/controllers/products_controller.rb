@@ -68,7 +68,10 @@ class ProductsController < ApplicationController
 
 private
   def load_categories
-    resource, id = request.path.split('/')[1, 2]
-    @categories = resource.singularize.classify.constantize.find(id)
+    begin
+      resource, id = request.path.split('/')[1, 2]
+    rescue ActiveRecord::RecordNotFound
+      @categories = resource.singularize.classify.constantize.find(id)
+    end
   end
 end

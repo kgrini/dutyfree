@@ -61,7 +61,7 @@ private
     begin
       @category = Category.find(params[:id])
     rescue ActiveRecord::RecordNotFound
-      logger.error "Попытка доступа к несуществующей категории #{params[:id]}"
+      #logger.error "Попытка доступа к несуществующей категории #{params[:id]}"
       redirect_to categories_path, :notice => "Категории не существует"
     else
       @category = Category.find(params[:id])
