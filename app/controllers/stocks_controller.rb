@@ -7,7 +7,9 @@ class StocksController < ApplicationController
 
   def index
     @cart =  current_cart
-    @stocks = Stock.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
+    #params[:page]
+    @stocks = Stock.order("created_at DESC").paginate(:page => params[:page].to_i + 1,
+                                                      :per_page => 3)
   end
 
   def show
