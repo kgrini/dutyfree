@@ -10,13 +10,14 @@ class ContactsController < ApplicationController
   end
 
   def create
+    @cart = current_cart
     @contact = Contact.new(contact_params)
     @contact.request = request
     if @contact.deliver
       redirect_to root_path, :notice => "Сообщение отправленно"
     else
       flash.now[:error] = 'Cannot send message.'
-      render "new"
+      render :new
     end
   end
 
