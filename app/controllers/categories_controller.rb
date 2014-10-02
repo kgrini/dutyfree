@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
 
   def show
     @cart = current_cart
-    @category = Category.find(params[:id])
+    @category = Category.cached_find(params[:id])
     @categories = @category
     @products = @categories.products.paginate(:page => params[:page], :per_page => 12)
     @product = Product.new
